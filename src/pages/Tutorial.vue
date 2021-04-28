@@ -27,14 +27,21 @@
         </div>
         <div class="image">
           <img src="/img/ufo.png" alt="Step 1" />
+            <div class="icon-1">
+
+                      <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.9688 24.9999V16.9999C30.9684 16.6492 30.8758 16.3047 30.7003 16.0011C30.5248 15.6974 30.2725 15.4453 29.9688 15.2699L22.9688 11.2699C22.6647 11.0944 22.3198 11.002 21.9688 11.002C21.6177 11.002 21.2728 11.0944 20.9688 11.2699L13.9688 15.2699C13.665 15.4453 13.4127 15.6974 13.2372 16.0011C13.0617 16.3047 12.9691 16.6492 12.9688 16.9999V24.9999C12.9691 25.3506 13.0617 25.6951 13.2372 25.9987C13.4127 26.3024 13.665 26.5545 13.9688 26.7299L20.9688 30.7299C21.2728 30.9054 21.6177 30.9979 21.9688 30.9979C22.3198 30.9979 22.6647 30.9054 22.9688 30.7299L29.9688 26.7299C30.2725 26.5545 30.5248 26.3024 30.7003 25.9987C30.8758 25.6951 30.9684 25.3506 30.9688 24.9999Z" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.2388 15.96L21.9688 21.01L30.6988 15.96" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.9688 31.08V21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="21.9688" cy="21" r="20" stroke="#1E2022" stroke-width="2"/>
+                    </svg>
+
+            </div>
         </div>
       </div>
 
       <div class="tutorial__step">
-        <div class="image">
-          <img src="/img/ufo.png" alt="Step 1" />
-        </div>
-        <div class="text">
+        <div class="text left-to-right">
           <h6>Create “Hello World” Contract</h6>
           <p>
             Tutorial description Lorem ipsum dolor sit amet, consectetur
@@ -42,6 +49,19 @@
             viverra egestas faucibus sollicitudin non adipiscing morbi.
           </p>
           <a href="#">Use Docker To Launch Your Secret Node</a>
+        </div>
+         <div class="image right-to-left" >
+          <img src="/img/ufo.png" alt="Step 1" />
+           <div class="icon-2">
+
+                      <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.9688 24.9999V16.9999C30.9684 16.6492 30.8758 16.3047 30.7003 16.0011C30.5248 15.6974 30.2725 15.4453 29.9688 15.2699L22.9688 11.2699C22.6647 11.0944 22.3198 11.002 21.9688 11.002C21.6177 11.002 21.2728 11.0944 20.9688 11.2699L13.9688 15.2699C13.665 15.4453 13.4127 15.6974 13.2372 16.0011C13.0617 16.3047 12.9691 16.6492 12.9688 16.9999V24.9999C12.9691 25.3506 13.0617 25.6951 13.2372 25.9987C13.4127 26.3024 13.665 26.5545 13.9688 26.7299L20.9688 30.7299C21.2728 30.9054 21.6177 30.9979 21.9688 30.9979C22.3198 30.9979 22.6647 30.9054 22.9688 30.7299L29.9688 26.7299C30.2725 26.5545 30.5248 26.3024 30.7003 25.9987C30.8758 25.6951 30.9684 25.3506 30.9688 24.9999Z" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.2388 15.96L21.9688 21.01L30.6988 15.96" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.9688 31.08V21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="21.9688" cy="21" r="20" stroke="#1E2022" stroke-width="2"/>
+                    </svg>
+
+            </div>
         </div>
       </div>
 
@@ -57,11 +77,31 @@
         </div>
         <div class="image">
           <img src="/img/ufo.png" alt="Step 1" />
+           <div class="icon-3">
+
+                      <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.9688 24.9999V16.9999C30.9684 16.6492 30.8758 16.3047 30.7003 16.0011C30.5248 15.6974 30.2725 15.4453 29.9688 15.2699L22.9688 11.2699C22.6647 11.0944 22.3198 11.002 21.9688 11.002C21.6177 11.002 21.2728 11.0944 20.9688 11.2699L13.9688 15.2699C13.665 15.4453 13.4127 15.6974 13.2372 16.0011C13.0617 16.3047 12.9691 16.6492 12.9688 16.9999V24.9999C12.9691 25.3506 13.0617 25.6951 13.2372 25.9987C13.4127 26.3024 13.665 26.5545 13.9688 26.7299L20.9688 30.7299C21.2728 30.9054 21.6177 30.9979 21.9688 30.9979C22.3198 30.9979 22.6647 30.9054 22.9688 30.7299L29.9688 26.7299C30.2725 26.5545 30.5248 26.3024 30.7003 25.9987C30.8758 25.6951 30.9684 25.3506 30.9688 24.9999Z" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.2388 15.96L21.9688 21.01L30.6988 15.96" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.9688 31.08V21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="21.9688" cy="21" r="20" stroke="#1E2022" stroke-width="2"/>
+                    </svg>
+
+            </div>
         </div>
       </div>
 
       <div class="step-end">
         <div class="text">
+           <div class="icon-3">
+
+                      <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.9688 24.9999V16.9999C30.9684 16.6492 30.8758 16.3047 30.7003 16.0011C30.5248 15.6974 30.2725 15.4453 29.9688 15.2699L22.9688 11.2699C22.6647 11.0944 22.3198 11.002 21.9688 11.002C21.6177 11.002 21.2728 11.0944 20.9688 11.2699L13.9688 15.2699C13.665 15.4453 13.4127 15.6974 13.2372 16.0011C13.0617 16.3047 12.9691 16.6492 12.9688 16.9999V24.9999C12.9691 25.3506 13.0617 25.6951 13.2372 25.9987C13.4127 26.3024 13.665 26.5545 13.9688 26.7299L20.9688 30.7299C21.2728 30.9054 21.6177 30.9979 21.9688 30.9979C22.3198 30.9979 22.6647 30.9054 22.9688 30.7299L29.9688 26.7299C30.2725 26.5545 30.5248 26.3024 30.7003 25.9987C30.8758 25.6951 30.9684 25.3506 30.9688 24.9999Z" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.2388 15.96L21.9688 21.01L30.6988 15.96" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.9688 31.08V21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="21.9688" cy="21" r="20" stroke="#1E2022" stroke-width="2"/>
+                    </svg>
+
+            </div>
           <h6>
             Now You’re Ready to Try It!
           </h6>
@@ -116,14 +156,15 @@
     }
   }
   &__step {
-    border-bottom: 2px solid var(--dark-1);
-    border-right: 2px solid var(--dark-1);
-    border-radius: 30px;
-    margin: 120px 25%;
-    height: 250px;
+    display: flex;
+    position: relative;
+    margin: 0 25%;
+    height: 300px;
+    margin-top: 50px;
+    padding: 20px;
     display: flex;
     @media (max-width: 1024px) {
-      margin: 30px 0;
+      margin: 30px 5%;
       flex-wrap: wrap;
       justify-items: center;
       justify-content: center;
@@ -131,12 +172,67 @@
       text-align: center;
     }
     & .text {
-      padding: 24px;
+      padding: 24px 5%;
+      @media (max-width: 1024px) {
+            padding: 24px 15%;
+      }
+      @media (max-width: 404px) {
+            padding: 24px 5%;
+      }
+    }
+    & .left-to-right{
+       width: 70%;
+       @media (max-width: 1024px) {
+          width:100%
+        }
+       margin-left: auto;
     }
     & .image {
+      width: 50%;
       & img {
         width: 100%;
       }
+    }
+    & .right-to-left{
+      width: 30%;
+      padding:24px;
+      position: absolute;
+      @media (max-width: 1024px) {
+          position:static;
+      }
+    }
+    & .icon-1{
+      position: absolute;
+      right: -5%;
+      top:30%;
+      &:after{
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom-right-radius: 50px;
+        content:"";
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        height: 160px;
+        width:100%;
+        @media (max-width: 1024px) {
+            height: 520px;
+        }
+      }
+    }
+  & .icon-2{
+      position: absolute;
+      left: -5%;
+      top: 50%;
+    }
+  & .icon-3{
+      position: absolute;
+      right: -5%;
+      top:50%
+    }
+  & .icon-4{
+      position: absolute;
+      right: 50%;
     }
   }
   & .step-end {
