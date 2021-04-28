@@ -1,7 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "../pages/Index.vue";
-import Tutorial from "../pages/Tutorial.vue";
 import SecretCounter from "../pages/SecretCounter.vue";
+import Tutorial from "../pages/Tutorial.vue";
+import TutorialLaunching from "../pages/TutorialLaunching.vue";
 
 const routes = [
   {
@@ -22,7 +23,7 @@ const routes = [
   {
     path: "/tutorial-launching",
     name: "TutorialLaunching",
-    component: Tutorial,
+    component: TutorialLaunching,
   },
 ];
 

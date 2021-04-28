@@ -1,3 +1,4 @@
+
 <template>
   <section class="container">
     <div class="tutorial">
@@ -23,7 +24,8 @@
             contracts in your local environment is install and launch a Secret
             Network blockchain.
           </p>
-          <a href="#">Let’s Go</a>
+          <br>
+          <router-link to="/tutorial-launching" class="btn btn-primary">Let’s Go</router-link>
         </div>
         <div class="image">
           <img src="/img/ufo.png" alt="Step 1" />
@@ -199,6 +201,8 @@
       position: absolute;
       @media (max-width: 1024px) {
           position:static;
+          width: 50%;
+          padding:0;
       }
     }
     & .icon-1{
@@ -214,7 +218,8 @@
         top: 40px;
         right: 20px;
         height: 160px;
-        width:100%;
+        width:800px;
+        z-index: -1;
         @media (max-width: 1024px) {
             height: 520px;
         }
