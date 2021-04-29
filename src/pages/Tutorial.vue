@@ -1,6 +1,6 @@
 
 <template>
-  <section class="container">
+  <section class="container_tutorial">
     <div class="tutorial">
       <div class="tutorial__hero">
         <h2>“Hello World”</h2>
@@ -301,7 +301,7 @@
 </template>
 
 <style lang="scss" scope>
-.container {
+.container_tutorial {
   display: flex;
   flex-wrap: wrap;
   width: 100%;

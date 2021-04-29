@@ -1,6 +1,6 @@
 <template>
   <section class="main">
-    <div class="container">
+    <div class="container-support">
       <div class="support-title">
         <br />
         <br />
@@ -309,7 +309,7 @@ export default {
   overflow: hidden;
   background: var(--grayscale);
 }
-.container {
+.container-support {
   width: 100%;
   padding: 0 10%;
   position: relative;

@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container_secret_counter">
     <div class="secret__hero">
       <div class="left">
         <img src="/img/secret-box-big.png" alt="Secret Counter" />
@@ -151,7 +151,7 @@
 
 
 <style lang="scss" scope>
-.container {
+.container_secret_counter {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;

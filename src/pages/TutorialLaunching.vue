@@ -1,7 +1,7 @@
 <template>
   <section class="main">
     <img class="bg-launching" src="/img/bg-launching.png" alt="launcing" />
-    <div class="container">
+    <div class="container_tutorial_launch">
       <h2 class="title">
         Launching Your Developer
         <br />
@@ -10,7 +10,7 @@
       <div class="content">
         <p>
           This tutorial is for developers to get started with development on the
-          Secret Network. The local blockchain runs in a docker container and
+          Secret Network. The local blockchain runs in a docker container_tutorial_launch and
           simulates the Intel SGX (TEE) that is a requirement for the Holodeck
           testnet and mainnet.
         </p>
@@ -33,7 +33,7 @@
         <br />
         <p>
           In a terminal window start the Secret Network by running the docker
-          container named secretdev:
+          container_tutorial_launch named secretdev:
         </p>
         <br />
         <div>
@@ -331,6 +331,7 @@ docker run -it --rm \
   align-items: flex-start;
   overflow: hidden;
   background: var(--grayscale);
+  
 }
 .bg-launching {
   position: absolute;
@@ -346,9 +347,9 @@ docker run -it --rm \
     left: -250%;
   }
 }
-.container {
+.container_tutorial_launch {
   width: 100%;
-  padding: 0 20%;
+  padding: 0 25%;
   @media (max-width: 1024px) {
     padding: 0 5%;
   }
