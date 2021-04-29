@@ -80,7 +80,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" >
  .input-box{
      display: flex;
        justify-items: center;

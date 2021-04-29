@@ -253,7 +253,7 @@
         </div>
         <div>
           <br />
-          <button  type="submit" class="btn btn-primary btn-lg">
+          <button type="submit" class="btn btn-primary btn-lg">
             Submit a request
           </button>
           <br />
@@ -272,7 +272,9 @@
           out?
         </p>
 
-        <router-link to="/tutorial" class="btn btn-primary">See tutorials</router-link>
+        <router-link to="/tutorial" class="btn btn-primary"
+          >See tutorials</router-link
+        >
         <a href="#" class="btn btn-secondary" @click="submit = false">Skip</a>
       </div>
     </div>
@@ -291,16 +293,15 @@ export default {
       submit: false,
     };
   },
-  methods:{
-    submitData(e){
+  methods: {
+    submitData(e) {
       e.preventDefault();
-      this.submit = true
-
-    }
-  }
+      this.submit = true;
+    },
+  },
 };
 </script>
-<style lang="scss" scope>
+<style lang="scss" scoped>
 .main {
   width: 100vw;
   position: relative;
@@ -328,6 +329,7 @@ export default {
   max-width: 772px;
 }
 .card {
+  padding: 10px;
   display: flex;
   align-items: center;
   width: 60%;
@@ -393,6 +395,8 @@ export default {
   padding: 12px 16px;
   border-radius: 5px;
 }
+
+
 .modal {
   position: fixed;
   width: 100%;
@@ -404,6 +408,8 @@ export default {
   align-items: center;
   z-index: 1300;
 }
+
+
 .modal-close {
   position: fixed;
   width: 100%;

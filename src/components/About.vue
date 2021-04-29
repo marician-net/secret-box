@@ -148,13 +148,13 @@
   </div>
 </template>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 .about {
   padding: 50px 10%;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background: white;
+  background: var(--grayscale);
   &__left {
     padding-right: 50px;
     width: 50%;

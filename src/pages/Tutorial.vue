@@ -297,14 +297,18 @@
         <img class="bg-1" src="/img/bg1.png" alt="" />
       </div>
     </div>
+
+    
   </section>
 </template>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 .container_tutorial {
+  background: var(--grayscale);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  padding: 0 10%;
   align-items: center;
   align-content: center;
 }
@@ -316,7 +320,7 @@
   margin: auto;
   margin-bottom: 150px;
   &__hero {
-    padding: 0 20%;
+    padding: 0 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -339,8 +343,8 @@
   &__step {
     display: flex;
     position: relative;
-    margin: 0 5%;
-    height: 300px;
+    margin: 0 10%;
+    height: 400px;
     margin-top: 50px;
     padding: 20px;
     display: flex;
@@ -375,7 +379,7 @@
       }
     }
     & .right-to-left {
-      width: 30%;
+      width: 35%;
       padding: 24px;
       padding-left: 50px;
       position: absolute;
@@ -389,21 +393,21 @@
       position: absolute;
       right: -5%;
       top: 30%;
-      &:after {
-        border-bottom: 1px solid black;
-        border-right: 1px solid black;
-        border-bottom-right-radius: 50px;
-        content: "";
-        position: absolute;
-        top: 40px;
-        right: 20px;
-        height: 160px;
-        width: 800px;
-        z-index: -1;
-        @media (max-width: 1024px) {
-          height: 520px;
-        }
-      }
+      // &:after {
+      //   border-bottom: 1px solid black;
+      //   border-right: 1px solid black;
+      //   border-bottom-right-radius: 50px;
+      //   content: "";
+      //   position: absolute;
+      //   top: 40px;
+      //   right: 20px;
+      //   height: 160px;
+      //   width: 800px;
+      //   z-index: -1;
+      //   @media (max-width: 1024px) {
+      //     height: 520px;
+      //   }
+      // }
     }
     & .icon-2 {
       position: absolute;

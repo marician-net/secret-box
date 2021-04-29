@@ -150,12 +150,12 @@
 </template>
 
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 .container_secret_counter {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  background: var(--bg-gray);
+  background: var(--grayscale);
   position: relative;
   width: 100%;
 }

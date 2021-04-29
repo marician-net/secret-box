@@ -76,7 +76,7 @@
   </a>
 </template>
 
-<style lang="scss" scope>
+<style lang="scss">
 .social-icon:hover {
   opacity: 0.8;
 }

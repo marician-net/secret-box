@@ -140,7 +140,7 @@ export default {
 </script>
 
 
-<style lang="scss" scope>
+<style lang="scss">
 .navbar {
   z-index: 1200;
   padding: 0 10%;

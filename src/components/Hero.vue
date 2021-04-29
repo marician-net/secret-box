@@ -63,14 +63,15 @@
   </section>
 </template>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 .hero {
   padding: 50px 10%;
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
   min-height: 714px;
-  background: var(--bg-gray);
+    background: var(--grayscale);
+
   &__text {
     width: 50%;
     display: flex;

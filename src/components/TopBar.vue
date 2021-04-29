@@ -16,7 +16,7 @@ export default {
 </script>
 
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 .topbar {
   padding: 0 10%;
   height: 50px;
