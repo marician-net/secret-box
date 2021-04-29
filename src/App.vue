@@ -59,6 +59,7 @@ input:focus {
   --primary: #f8d948;
   --primary-gray: #939597;
   --secondary: #4867f8;
+  --secondary-dark: #0096B7;
   --grayscale: #FCFCFC;
   // Shadow
   --focus-shadow: 0px 0px 16px rgba(255, 217, 17, 0.35);
@@ -188,6 +189,16 @@ main {
   border-radius: 8px;
 }
 .btn-secondary:hover {
+  background: #fff2b7;
+}
+
+
+.btn-link {
+  padding:8px;
+  background: #fcfcfc;
+  border-radius: 8px;
+}
+.btn-link:hover {
   background: #fff2b7;
 }
 .btn-icon-hover svg {
