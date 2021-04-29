@@ -320,6 +320,7 @@
   margin: auto;
   margin-bottom: 150px;
   &__hero {
+    
     padding: 0 30%;
     display: flex;
     flex-wrap: wrap;

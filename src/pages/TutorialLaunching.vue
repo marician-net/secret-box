@@ -524,7 +524,7 @@ docker run -it --rm \
 </script>
 <style lang="scss" scoped>
 .main {
-  width: 100vw;
+  width: 100%;
   position: relative;
   display: flex;
   align-items: flex-start;
