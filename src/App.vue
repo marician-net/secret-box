@@ -59,6 +59,7 @@ input:focus {
   --primary: #f8d948;
   --primary-gray: #939597;
   --secondary: #4867f8;
+  --grayscale: #FCFCFC;
   // Shadow
   --focus-shadow: 0px 0px 16px rgba(255, 217, 17, 0.35);
   --drop-shadow: 3px 6px 10px rgba(0, 0, 0, 0.25);
@@ -173,6 +174,12 @@ main {
 }
 .btn-primary:hover {
   background: #6e7191;
+}
+.btn-primary-yellow {
+  background: var(--primary);
+  border-radius: 10px;
+  color: var(--background);
+  font-weight: normal;
 }
 
 .btn-secondary {

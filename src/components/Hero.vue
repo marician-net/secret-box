@@ -79,6 +79,7 @@
     align-content: center;
     padding-right: 10%;
 
+
     & .title {
       font-family: Gobold High;
       font-style: normal;

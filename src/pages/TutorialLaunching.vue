@@ -28,44 +28,136 @@
         <br />
         <h4>
           Launch the Developer Secret Network
-          <button class="btn btn-primary btn-lg">Linux</button>
+          <button class="btn btn-primary">Linux</button>
         </h4>
         <br />
         <p>
           In a terminal window start the Secret Network by running the docker
           container named secretdev:
         </p>
-        <br>
+        <br />
         <div>
-        <prism-editor
-            class="my-editor height-100"
+          <prism-editor
+            class="light-editor height-100"
             v-model="code"
             :highlight="highlighter"
             :line-numbers="lineNumbers"
             :readonly="true"
           >
-        </prism-editor>
-         <button class="btn btn-outline-default">Copy</button>
-
-        </div>
-        <br>
-        <button class="btn btn-primary btn-lg">
-          Note: To stop the secretdev blockchain enter 
-        </button>
-        <br>
-        <p>Your local blockchain starts with a set of keys or accounts, named  </p>
-        <br>
-         <div>
-          <prism-editor
-              class="my-editor height-300"
-              v-model="code2"
-              :highlight="highlighter"
-              :line-numbers="lineNumbers"
-              :readonly="true"
-            >
           </prism-editor>
-           <button class="btn btn-outline-default">Copy</button>
-         </div>
+          <button class="btn btn-outline-default">Copy</button>
+        </div>
+        <br />
+        <button class="btn btn-primary-yellow btn-lg">
+          Note: To stop the secretdev blockchain enter <span>ctrl + c</span>
+        </button>
+        <br />
+        <br />
+        <p>
+          Your local blockchain starts with a set of keys or accounts, named
+        </p>
+        <br />
+        <div>
+          <prism-editor
+            class="my-editor height-300"
+            v-model="code2"
+            :highlight="highlighter"
+            :line-numbers="lineNumbers"
+            :readonly="true"
+          >
+          </prism-editor>
+          <button class="btn btn-outline-default">Copy</button>
+        </div>
+        <br />
+        <p>
+          After initializing and validating the genesis file you can see the
+          network starting and blocks getting committed. Included in the startup
+          is an HTTP REST server (also known as the LCD or Light Client Daemon)
+          that can be accessed via
+          <span>Local Host on port <i>1337</i></span>
+        </p>
+        <br />
+        <br />
+        <h4>Query the Latest Block</h4>
+        <br />
+        <hr />
+        <br />
+        <div>
+          <prism-editor
+            class="my-editor height-300"
+            v-model="code3"
+            :highlight="highlighter"
+            :line-numbers="lineNumbers"
+            :readonly="true"
+          >
+          </prism-editor>
+          <button class="btn btn-outline-default">Copy</button>
+        </div>
+        <br />
+        <p>Use the REST API to view the latest block information.</p>
+        <br />
+        <div>
+          <prism-editor
+            class="light-editor height-100"
+            v-model="code4"
+            :highlight="highlighter"
+            :line-numbers="lineNumbers"
+            :readonly="true"
+          >
+          </prism-editor>
+          <button class="btn btn-outline-default">Copy</button>
+        </div>
+        <br />
+        <p>Query the list of keys using secretcli:</p>
+        <br />
+        <div>
+          <prism-editor
+            class="light-editor height-100"
+            v-model="code5"
+            :highlight="highlighter"
+            :line-numbers="lineNumbers"
+            :readonly="true"
+          >
+          </prism-editor>
+          <button class="btn btn-outline-default">Copy</button>
+        </div>
+        <br />
+        <p class="btn btn-primary-yellow">
+          Note: secretcli is configured to use the test keyring backend which
+          makes it easier for development and testing (e.g. no password
+          required).
+        </p>
+        <br />
+
+        <div>
+          <prism-editor
+            class="my-editor height-300"
+            v-model="code6"
+            :highlight="highlighter"
+            :line-numbers="lineNumbers"
+            :readonly="true"
+          >
+          </prism-editor>
+          <button class="btn btn-outline-default">Copy</button>
+        </div>
+
+        <br />
+        <p>
+          Use exit to
+          <span>quit</span>
+          your interactive Docker session.
+        </p>
+        <br />
+        <br />
+        <br />
+
+        <router-link to="/tutorial" class="btn btn-secondary btn-lg">
+          back to tutorial page
+        </router-link>
+
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   </section>
@@ -91,8 +183,9 @@ docker run -it --rm \
 
   -p 26657:26657 -p 26656:26656 -p 1337:1337 \
 
-  --name secretdev enigmampc/secret-network-sw-dev`,
-  code2: `
+  --name secretdev enigmampc/secret-network-sw-dev
+`,
+    code2: `
 [
 	{
 		"id": "0001",
@@ -163,6 +256,64 @@ docker run -it --rm \
 			]
 	}
 ]`,
+    code3: `{
+		"id": "0001",
+		"type": "donut",
+		"name": "Cake",
+		"ppu": 0.55,
+		"batters":
+			{
+				"batter":
+					[
+						{ "id": "1001", "type": "Regular" },
+						{ "id": "1002", "type": "Chocolate" },
+						{ "id": "1003", "type": "Blueberry" },
+						{ "id": "1004", "type": "Devil's Food" }
+					]
+			},
+		"topping":
+			[
+				{ "id": "5001", "type": "None" },
+				{ "id": "5002", "type": "Glazed" },
+				{ "id": "5005", "type": "Sugar" },
+				{ "id": "5007", "type": "Powdered Sugar" },
+				{ "id": "5006", "type": "Chocolate with Sprinkles" },
+				{ "id": "5003", "type": "Chocolate" },
+				{ "id": "5004", "type": "Maple" }
+			]
+	}`,
+    code4: `
+  curl http://localhost:1337/blocks/latest
+  `,
+    code5: `
+  secretcli keys list
+  `,
+    code6: `{
+		"id": "0001",
+		"type": "donut",
+		"name": "Cake",
+		"ppu": 0.55,
+		"batters":
+			{
+				"batter":
+					[
+						{ "id": "1001", "type": "Regular" },
+						{ "id": "1002", "type": "Chocolate" },
+						{ "id": "1003", "type": "Blueberry" },
+						{ "id": "1004", "type": "Devil's Food" }
+					]
+			},
+		"topping":
+			[
+				{ "id": "5001", "type": "None" },
+				{ "id": "5002", "type": "Glazed" },
+				{ "id": "5005", "type": "Sugar" },
+				{ "id": "5007", "type": "Powdered Sugar" },
+				{ "id": "5006", "type": "Chocolate with Sprinkles" },
+				{ "id": "5003", "type": "Chocolate" },
+				{ "id": "5004", "type": "Maple" }
+			]
+	}`,
     lineNumbers: true,
   }),
   methods: {
@@ -179,6 +330,7 @@ docker run -it --rm \
   display: flex;
   align-items: flex-start;
   overflow: hidden;
+  background: var(--grayscale);
 }
 .bg-launching {
   position: absolute;
@@ -197,6 +349,9 @@ docker run -it --rm \
 .container {
   width: 100%;
   padding: 0 20%;
+  @media (max-width: 1024px) {
+    padding: 0 5%;
+  }
   position: relative;
   & .title {
     position: absolute;
@@ -206,22 +361,21 @@ docker run -it --rm \
     z-index: 10;
   }
   & .content {
-    margin-top: 35%;
+    margin-top: 400px;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.5px;
   }
 }
-
+// required class
+.light-editor {
+  background: white;
+  border-radius: 5px;
+}
 // required class
 .my-editor {
   background: #2d2d2d;
   color: #ccc;
-
-  font-family: Fira code, Fira Mono, Consolas, Menlo, Courier, monospace;
-  font-size: 14px;
-  line-height: 1.5;
-  padding: 5px;
 }
 
 // optional

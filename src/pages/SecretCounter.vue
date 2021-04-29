@@ -171,7 +171,7 @@
     flex-wrap: wrap;
     justify-content: center;
     justify-items: flex-start;
-    padding: 5% 10%;
+    padding: 5% 5%;
     padding-bottom: 15%;
     @media (max-width: 1024px) {
       width: 100%;

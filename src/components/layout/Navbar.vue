@@ -102,7 +102,7 @@
         <router-link to="/tutorial">Tutorial</router-link>
       </li>
       <li>
-        <a href="#">Support</a>
+        <router-link to="/support">Support</router-link>
       </li>
       <li class="navbar__social">
         <Social />

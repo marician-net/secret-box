@@ -3,6 +3,7 @@ import Home from "../pages/Index.vue";
 import SecretCounter from "../pages/SecretCounter.vue";
 import Tutorial from "../pages/Tutorial.vue";
 import TutorialLaunching from "../pages/TutorialLaunching.vue";
+import Support from "../pages/Support.vue";
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: "/tutorial-launching",
     name: "TutorialLaunching",
     component: TutorialLaunching,
+  },
+  {
+    path: "/support",
+    name: "Support",
+    component: Support,
   },
 ];
 

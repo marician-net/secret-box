@@ -137,7 +137,7 @@
   margin: auto;
   margin-bottom: 150px;
   &__hero {
-    padding: 0 25%;
+    padding: 0 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -151,7 +151,7 @@
       font-weight: normal;
     }
     @media (max-width: 1024px) {
-      padding: 0 20%;
+      padding: 15%;
     }
     @media (max-width: 404px) {
       padding: 0 5%;
@@ -160,7 +160,7 @@
   &__step {
     display: flex;
     position: relative;
-    margin: 0 25%;
+    margin: 0 5%;
     height: 300px;
     margin-top: 50px;
     padding: 20px;
