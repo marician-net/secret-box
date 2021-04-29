@@ -2,20 +2,20 @@
   <section class="main">
     <div class="container">
       <div class="support-title">
-          <br>
-        <br>
-        <h2 >Support & Community</h2>
+        <br />
+        <br />
+        <h2>Support & Community</h2>
         <p>
-          <br>
-          <br>
+          <br />
+          <br />
           We’re here to support you and help you get going with Secret Boxes as
           part of your path to building dApps on the Secret Network. We have an
           awesome community of developers so come chat with us about use cases,
           suggestions and ideas, and more!
         </p>
-          <br>
-          <br>
-          <br>
+        <br />
+        <br />
+        <br />
       </div>
 
       <div class="list-card">
@@ -44,62 +44,168 @@
               suggestions!
             </p>
             <br />
-            <a href="#" class="btn btn-primary">Check Discord</a>
+            <a href="#" class="btn btn-primary btn-icon-hover"
+              >Check Discord
+
+              <svg
+                width="12"
+                height="10"
+                viewBox="0 0 12 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.1665 4.81706L1.1665 4.81706"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.1333 0.80083L11.1666 4.81683L7.1333 8.8335"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
           </div>
         </div>
         <div class="card">
           <div class="card-image">
-       <svg width="212" height="212" viewBox="0 0 212 212" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="212" height="212" fill="#F7F7FC"/>
-<circle cx="105.5" cy="106.5" r="53.5" fill="#121314"/>
-<path d="M143.332 68.6896C133.222 58.569 119.792 53 105.505 53C76.0003 53 52 77.0217 52 106.548C52 136.075 76.0003 160.096 105.505 160.096C119.792 160.096 133.233 154.527 143.332 144.407C153.442 134.286 159 120.846 159 106.548C159 92.2508 153.442 78.7995 143.332 68.6896ZM105.505 156.391C78.0458 156.391 55.7055 134.029 55.7055 106.548C55.7055 79.0673 78.0458 56.7055 105.505 56.7055C132.965 56.7055 155.305 79.0673 155.305 106.548C155.305 134.029 132.965 156.391 105.505 156.391Z" fill="#FCFCFC"/>
-<path d="M123.069 107.812C119.642 104.749 115.154 102.704 110.806 100.722L110.774 100.712C103.106 97.2095 96.4767 94.1787 96.9479 87.0139C97.1514 84.283 99.1327 82.6337 100.761 81.7448C102.592 80.7381 105.023 80.1383 107.272 80.1383C107.54 80.1383 107.807 80.149 108.065 80.1598C114.608 80.5988 119.77 83.3726 124.814 89.1344L125.114 89.4878L125.468 89.188L127.438 87.4744L127.792 87.1639L127.481 86.8104C121.859 80.3632 115.754 77.1182 108.289 76.6149C107.968 76.5827 107.625 76.572 107.251 76.572C107.026 76.572 106.779 76.572 106.522 76.5827H106.201C101.307 76.5827 95.9412 78.1892 91.8608 80.888C86.988 84.1116 84.257 88.5454 84.182 93.3754C83.9893 105.124 93.5958 109.076 102.067 112.578L102.089 112.589L102.174 112.621C109.671 115.726 116.14 118.404 116 125.579C115.936 130.313 109.168 132.926 104.52 132.926H104.327H103.866V132.937C96.9372 132.733 90.747 129.745 85.4672 124.08L85.1459 123.737L84.8032 124.048L82.8862 125.826L82.5435 126.147L82.8647 126.49C88.8621 132.948 96.2625 136.417 104.273 136.514H104.637C109.81 136.514 115.433 135.122 119.674 132.776C124.986 129.874 128.081 125.644 128.402 120.867C128.766 115.619 127.021 111.346 123.069 107.812ZM98.2009 97.595C101.253 100.208 105.387 102.082 109.382 103.892L109.457 103.924C113.687 105.874 117.692 107.716 120.595 110.275C123.808 113.103 125.168 116.38 124.879 120.589C124.611 124.755 121.516 127.539 118.699 129.221C119.245 128.107 119.545 126.897 119.577 125.611C119.642 121.285 117.982 117.826 114.49 115.02C111.438 112.567 107.39 110.907 103.47 109.29C95.3201 105.938 87.6198 102.768 87.759 93.4076C87.8019 89.8091 89.9652 86.4035 93.8528 83.8224C93.9813 83.7368 94.1099 83.6511 94.2491 83.5654C93.7886 84.5721 93.5315 85.6217 93.4673 86.7248C93.1567 91.0622 94.7096 94.6178 98.2009 97.595Z" fill="#FCFCFC"/>
-</svg>
-
+            <svg
+              width="212"
+              height="212"
+              viewBox="0 0 212 212"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="212" height="212" fill="#F7F7FC" />
+              <circle cx="105.5" cy="106.5" r="53.5" fill="#121314" />
+              <path
+                d="M143.332 68.6896C133.222 58.569 119.792 53 105.505 53C76.0003 53 52 77.0217 52 106.548C52 136.075 76.0003 160.096 105.505 160.096C119.792 160.096 133.233 154.527 143.332 144.407C153.442 134.286 159 120.846 159 106.548C159 92.2508 153.442 78.7995 143.332 68.6896ZM105.505 156.391C78.0458 156.391 55.7055 134.029 55.7055 106.548C55.7055 79.0673 78.0458 56.7055 105.505 56.7055C132.965 56.7055 155.305 79.0673 155.305 106.548C155.305 134.029 132.965 156.391 105.505 156.391Z"
+                fill="#FCFCFC"
+              />
+              <path
+                d="M123.069 107.812C119.642 104.749 115.154 102.704 110.806 100.722L110.774 100.712C103.106 97.2095 96.4767 94.1787 96.9479 87.0139C97.1514 84.283 99.1327 82.6337 100.761 81.7448C102.592 80.7381 105.023 80.1383 107.272 80.1383C107.54 80.1383 107.807 80.149 108.065 80.1598C114.608 80.5988 119.77 83.3726 124.814 89.1344L125.114 89.4878L125.468 89.188L127.438 87.4744L127.792 87.1639L127.481 86.8104C121.859 80.3632 115.754 77.1182 108.289 76.6149C107.968 76.5827 107.625 76.572 107.251 76.572C107.026 76.572 106.779 76.572 106.522 76.5827H106.201C101.307 76.5827 95.9412 78.1892 91.8608 80.888C86.988 84.1116 84.257 88.5454 84.182 93.3754C83.9893 105.124 93.5958 109.076 102.067 112.578L102.089 112.589L102.174 112.621C109.671 115.726 116.14 118.404 116 125.579C115.936 130.313 109.168 132.926 104.52 132.926H104.327H103.866V132.937C96.9372 132.733 90.747 129.745 85.4672 124.08L85.1459 123.737L84.8032 124.048L82.8862 125.826L82.5435 126.147L82.8647 126.49C88.8621 132.948 96.2625 136.417 104.273 136.514H104.637C109.81 136.514 115.433 135.122 119.674 132.776C124.986 129.874 128.081 125.644 128.402 120.867C128.766 115.619 127.021 111.346 123.069 107.812ZM98.2009 97.595C101.253 100.208 105.387 102.082 109.382 103.892L109.457 103.924C113.687 105.874 117.692 107.716 120.595 110.275C123.808 113.103 125.168 116.38 124.879 120.589C124.611 124.755 121.516 127.539 118.699 129.221C119.245 128.107 119.545 126.897 119.577 125.611C119.642 121.285 117.982 117.826 114.49 115.02C111.438 112.567 107.39 110.907 103.47 109.29C95.3201 105.938 87.6198 102.768 87.759 93.4076C87.8019 89.8091 89.9652 86.4035 93.8528 83.8224C93.9813 83.7368 94.1099 83.6511 94.2491 83.5654C93.7886 84.5721 93.5315 85.6217 93.4673 86.7248C93.1567 91.0622 94.7096 94.6178 98.2009 97.595Z"
+                fill="#FCFCFC"
+              />
+            </svg>
           </div>
           <div class="card-body">
             <h5>Post on the Forum</h5>
             <br />
             <p>
-             The Secret Network forum is where you can participate in more thoughtful discussions, ideas and more. 
+              The Secret Network forum is where you can participate in more
+              thoughtful discussions, ideas and more.
             </p>
             <br />
-            <a href="#" class="btn btn-primary">Check Forum</a>
+            <a href="#" class="btn btn-primary btn-icon-hover"
+              >Check Forum
+              <svg
+                width="12"
+                height="10"
+                viewBox="0 0 12 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.1665 4.81706L1.1665 4.81706"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.1333 0.80083L11.1666 4.81683L7.1333 8.8335"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
           </div>
         </div>
         <div class="card">
           <div class="card-image">
-            <svg width="212" height="212" viewBox="0 0 212 212" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="212" height="212" fill="#F7F7FC"/>
-<path d="M127 159.25C127 151.127 127 138.449 127 138.449C127.202 135.886 126.855 133.309 125.984 130.89C125.113 128.472 123.737 126.266 121.947 124.42C138.825 122.539 156.562 116.142 156.562 86.795C156.561 79.2905 153.674 72.0739 148.5 66.6387C150.95 60.0732 150.777 52.8161 148.016 46.375C148.016 46.375 141.674 44.4937 127 54.33C114.68 50.9911 101.694 50.9911 89.3749 54.33C74.7012 44.4937 68.3587 46.375 68.3587 46.375C65.5979 52.8161 65.4247 60.0732 67.8749 66.6387C62.6619 72.1142 59.7722 79.3961 59.8124 86.9562C59.8124 116.089 77.5499 122.485 94.4274 124.581C92.659 126.409 91.2952 128.588 90.4247 130.977C89.5542 133.366 89.1965 135.912 89.3749 138.449V159.25" fill="#14142B"/>
-<path d="M127 159.25C127 151.127 127 138.449 127 138.449C127.202 135.886 126.855 133.309 125.984 130.89C125.113 128.472 123.737 126.266 121.947 124.42C138.825 122.539 156.562 116.142 156.562 86.795C156.561 79.2905 153.674 72.0739 148.5 66.6387C150.95 60.0732 150.777 52.8161 148.016 46.375C148.016 46.375 141.674 44.4937 127 54.33C114.68 50.9911 101.694 50.9911 89.3749 54.33C74.7012 44.4937 68.3587 46.375 68.3587 46.375C65.5979 52.8161 65.4247 60.0732 67.8749 66.6387C62.6619 72.1142 59.7722 79.3961 59.8124 86.9562C59.8124 116.089 77.5499 122.485 94.4274 124.581C92.659 126.409 91.2952 128.588 90.4247 130.977C89.5542 133.366 89.1965 135.912 89.3749 138.449V159.25" stroke="#14142B"/>
-<path d="M89.375 145C62.5 153.063 62.5 129.688 51.75 127" stroke="#14142B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
+            <svg
+              width="212"
+              height="212"
+              viewBox="0 0 212 212"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="212" height="212" fill="#F7F7FC" />
+              <path
+                d="M127 159.25C127 151.127 127 138.449 127 138.449C127.202 135.886 126.855 133.309 125.984 130.89C125.113 128.472 123.737 126.266 121.947 124.42C138.825 122.539 156.562 116.142 156.562 86.795C156.561 79.2905 153.674 72.0739 148.5 66.6387C150.95 60.0732 150.777 52.8161 148.016 46.375C148.016 46.375 141.674 44.4937 127 54.33C114.68 50.9911 101.694 50.9911 89.3749 54.33C74.7012 44.4937 68.3587 46.375 68.3587 46.375C65.5979 52.8161 65.4247 60.0732 67.8749 66.6387C62.6619 72.1142 59.7722 79.3961 59.8124 86.9562C59.8124 116.089 77.5499 122.485 94.4274 124.581C92.659 126.409 91.2952 128.588 90.4247 130.977C89.5542 133.366 89.1965 135.912 89.3749 138.449V159.25"
+                fill="#14142B"
+              />
+              <path
+                d="M127 159.25C127 151.127 127 138.449 127 138.449C127.202 135.886 126.855 133.309 125.984 130.89C125.113 128.472 123.737 126.266 121.947 124.42C138.825 122.539 156.562 116.142 156.562 86.795C156.561 79.2905 153.674 72.0739 148.5 66.6387C150.95 60.0732 150.777 52.8161 148.016 46.375C148.016 46.375 141.674 44.4937 127 54.33C114.68 50.9911 101.694 50.9911 89.3749 54.33C74.7012 44.4937 68.3587 46.375 68.3587 46.375C65.5979 52.8161 65.4247 60.0732 67.8749 66.6387C62.6619 72.1142 59.7722 79.3961 59.8124 86.9562C59.8124 116.089 77.5499 122.485 94.4274 124.581C92.659 126.409 91.2952 128.588 90.4247 130.977C89.5542 133.366 89.1965 135.912 89.3749 138.449V159.25"
+                stroke="#14142B"
+              />
+              <path
+                d="M89.375 145C62.5 153.063 62.5 129.688 51.75 127"
+                stroke="#14142B"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
           <div class="card-body">
             <h5>Find us on Github</h5>
             <br />
             <p>
-              If you want to report an issue or make a suggestion, come find us. We welcome your feedback!
+              If you want to report an issue or make a suggestion, come find us.
+              We welcome your feedback!
             </p>
             <br />
-            <a href="#" class="btn btn-primary">Open an issue</a>
+            <a href="#" class="btn btn-primary btn-icon-hover"
+              >Open an issue
+              <svg
+                width="12"
+                height="10"
+                viewBox="0 0 12 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.1665 4.81706L1.1665 4.81706"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.1333 0.80083L11.1666 4.81683L7.1333 8.8335"
+                  stroke="#FCFCFC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
           </div>
         </div>
       </div>
-      <div  class="support-title">
-      <h2>Support Ticket</h2>
-            <p class="max-width">
-              The best way to get support directly from SecretChainGirl Foundation!
-              Open a support ticket to start a conversation with us. This will help us
-              in building our FAQ to assist future Secret Boxers!
-            </p>
+      <div class="support-title">
+        <h2>Support Ticket</h2>
+        <p class="max-width">
+          The best way to get support directly from SecretChainGirl Foundation!
+          Open a support ticket to start a conversation with us. This will help
+          us in building our FAQ to assist future Secret Boxers!
+        </p>
       </div>
-      <form action="#" class="form-support">
+      <form action="#" class="form-support" @submit="submitData">
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" placeholder="wumpus@foo.com" class="form-control" />
+          <input
+            type="email"
+            placeholder="wumpus@foo.com"
+            class="form-control"
+          />
         </div>
         <div class="form-group">
           <label for="subject">Subject</label>
@@ -146,15 +252,54 @@
           <s-input-file />
         </div>
         <div>
-          <button type="submit" class="btn btn-primary">
+          <br />
+          <button  type="submit" class="btn btn-primary btn-lg">
             Submit a request
           </button>
+          <br />
+          <br />
+          <br />
         </div>
       </form>
+    </div>
+
+    <div class="modal" v-if="submit">
+      <div class="modal-close" @click="submit = false"></div>
+      <div class="modal-body">
+        <h3>Request Submitted</h3>
+        <p>
+          We have some tutorials that might help if you’de like to check them
+          out?
+        </p>
+
+        <router-link to="/tutorial" class="btn btn-primary">See tutorials</router-link>
+        <a href="#" class="btn btn-secondary" @click="submit = false">Skip</a>
+      </div>
     </div>
   </section>
 </template>
 
+<script>
+import InputFile from "../components/common/InputFile.vue";
+export default {
+  name: "App",
+  components: {
+    "s-input-file": InputFile,
+  },
+  data() {
+    return {
+      submit: false,
+    };
+  },
+  methods:{
+    submitData(e){
+      e.preventDefault();
+      this.submit = true
+
+    }
+  }
+};
+</script>
 <style lang="scss" scope>
 .main {
   width: 100vw;
@@ -210,17 +355,17 @@
     width: 100%;
     padding: 8px;
   }
-  & small{
-     width: 100%;
-     padding: 8px;
+  & small {
+    width: 100%;
+    padding: 8px;
   }
 }
 .form-control {
   width: 70%;
-   @media (max-width: 1024px) {
-     width: 100%;
-   }
-  border: 1px solid #4E4B66;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+  border: 1px solid #4e4b66;
   padding: 12px 16px;
   border-radius: 5px;
 }
@@ -231,31 +376,67 @@
   margin: 30px 0;
 }
 
-.form-support{
+.form-support {
   width: 60%;
-   @media (max-width: 1024px) {
-     width: 100%;
-   }
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
-.w-100{
+.w-100 {
   width: 100%;
 }
 
-.select-custom{
+.select-custom {
   width: 100%;
-  border: 1px solid #4E4B66;
+  border: 1px solid #4e4b66;
   padding: 12px 16px;
   border-radius: 5px;
 }
-</style>
-
-<script>
-import InputFile from "../components/common/InputFile.vue";
-export default {
-  name: "App",
-  components: {
-    's-input-file' : InputFile,
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1300;
+}
+.modal-close {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(100, 100, 100, 0.75);
+  backdrop-filter: blur(11px);
+  z-index: 1301;
+}
+.modal-body {
+  position: absolute;
+  margin: auto;
+  width: 40%;
+  padding: 96px 128px;
+  background: var(--primary);
+  z-index: 1302;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  & p {
+    padding: 30px 0;
+  }
+  & a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 1024px) {
+    padding: 30px 60px;
+    width: 90%;
   }
 }
-</script>
+</style>

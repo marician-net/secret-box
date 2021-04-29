@@ -6,6 +6,8 @@
       <router-view />
     </main>
     <FooterGlobal />
+
+    
   </div>
 </template>
 
@@ -20,7 +22,7 @@ export default {
     TopBar,
     Navbar,
     FooterGlobal,
-  },
+  }
 };
 </script>
 
@@ -165,7 +167,7 @@ main {
   line-height: 20px;
   letter-spacing: 1.25px;
   text-transform: capitalize;
-  padding: 8px 16px;
+  padding: 8px 20px;
   cursor: pointer;
 }
 .btn-primary {
