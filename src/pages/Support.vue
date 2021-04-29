@@ -174,7 +174,7 @@
 }
 .support-title {
   width: 90%;
-  @media (max-width: 404px) {
+  @media (max-width: 1024px) {
     width: 100%;
     text-align: center;
   }
@@ -188,7 +188,7 @@
   width: 60%;
   background: white;
   margin-bottom: 30px;
-  @media (max-width: 404px) {
+  @media (max-width: 1024px) {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -217,7 +217,7 @@
 }
 .form-control {
   width: 70%;
-   @media (max-width: 404px) {
+   @media (max-width: 1024px) {
      width: 100%;
    }
   border: 1px solid #4E4B66;
@@ -233,7 +233,7 @@
 
 .form-support{
   width: 60%;
-   @media (max-width: 404px) {
+   @media (max-width: 1024px) {
      width: 100%;
    }
 }

@@ -93,7 +93,7 @@ export default {
     border-radius: 8px;
     padding: 16px 16px;
     width: 70%;
-     @media (max-width: 404px) {
+     @media (max-width: 1024px) {
      width: 100%;
    }
    & svg{
