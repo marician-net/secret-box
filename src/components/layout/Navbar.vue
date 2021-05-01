@@ -78,7 +78,7 @@
               : 'navbar-dropdown font-gobold'
           "
         >
-          <li @click="to('/secret-counter')">
+          <li @click="to('/secret/counter')">
             <img src="/img/box-gray.png" alt="Secret Counter" />
             <h4>Secret Counter</h4>
           </li>

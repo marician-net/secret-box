@@ -13,7 +13,7 @@ const routes = [
     component: Home,
   },
   {
-    path: "/secret-counter",
+    path: "/secret/counter",
     name: "SecretCounter",
     component: SecretCounter,
   },
@@ -23,7 +23,7 @@ const routes = [
     component: Tutorial,
   },
   {
-    path: "/tutorial-launching",
+    path: "/tutorial/launching",
     name: "TutorialLaunching",
     component: TutorialLaunching,
   },

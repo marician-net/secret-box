@@ -25,7 +25,7 @@
             Network blockchain.
           </p>
           <br />
-          <router-link to="/tutorial-launching" class="btn btn-link"
+          <router-link to="/tutorial/launching" class="btn btn-link"
             >Let’s Go
             <svg
               width="16"
@@ -312,13 +312,14 @@
   align-content: center;
 }
 .tutorial {
-  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
   margin: auto;
+  width: 100%;
+  padding: 0 10%;
+  padding-top: 50px;
   &__hero {
-    
     padding: 0 30%;
     display: flex;
     flex-wrap: wrap;
@@ -342,11 +343,10 @@
   &__step {
     display: flex;
     position: relative;
-    margin: 0 10%;
+    width: 100%;
     height: 400px;
     margin-top: 50px;
     padding: 20px;
-    display: flex;
     @media (max-width: 1024px) {
       margin: 30px 5%;
       flex-wrap: wrap;
@@ -372,19 +372,19 @@
       margin-left: auto;
     }
     & .image {
-      width: 50%;
+      width:30%;
       & img {
         width: 100%;
       }
     }
     & .right-to-left {
-      width: 35%;
+      width: 30%;
       padding: 24px;
       padding-left: 50px;
       position: absolute;
       @media (max-width: 1024px) {
         position: static;
-        width: 50%;
+        width: 30%;
         padding: 0;
       }
     }
@@ -392,21 +392,21 @@
       position: absolute;
       right: -5%;
       top: 30%;
-      &:after {
-        border-bottom: 1px solid black;
-        border-right: 1px solid black;
-        border-bottom-right-radius: 50px;
-        content: "";
-        position: absolute;
-        top: 40px;
-        right: 20px;
-        height: 160px;
-        width: 100%;
-        z-index: -1;
-        @media (max-width: 1024px) {
-          height: 520px;
-        }
-      }
+      // &:after {
+      //   border-bottom: 1px solid black;
+      //   border-right: 1px solid black;
+      //   border-bottom-right-radius: 50px;
+      //   content: "";
+      //   position: absolute;
+      //   top: 40px;
+      //   right: 20px;
+      //   height: 160px;
+      //   width: 100%;
+      //   z-index: -1;
+      //   @media (max-width: 1024px) {
+      //     height: 520px;
+      //   }
+      // }
     }
     & .icon-2 {
       position: absolute;
