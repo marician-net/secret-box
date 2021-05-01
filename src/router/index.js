@@ -4,6 +4,7 @@ import SecretCounter from "../pages/SecretCounter.vue";
 import Tutorial from "../pages/Tutorial.vue";
 import TutorialLaunching from "../pages/TutorialLaunching.vue";
 import Support from "../pages/Support.vue";
+import ExampleComponent from "../pages/ExampleComponent.vue";
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     name: "Support",
     component: Support,
   },
+  {
+    path: "/example-component",
+    name: "ExanpleComponent",
+    component: ExampleComponent
+  }
 ];
 
 const router = createRouter({

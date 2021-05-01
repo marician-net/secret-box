@@ -77,6 +77,9 @@
 </template>
 
 <style lang="scss">
+.social-icon{
+  margin-left: 10px;
+}
 .social-icon:hover {
   opacity: 0.8;
 }
