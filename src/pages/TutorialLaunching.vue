@@ -563,9 +563,12 @@ secretcli keys list
     z-index: 10;
   }
   & .content {
-    margin-top: 300px;
-    @media (max-width: 1024px) {
-        margin-top: 380px;
+    margin-top: 40%;
+    @media (max-width:1024px){
+      margin-top:45%
+    }
+     @media (max-width:600px){
+      margin-top:110%
     }
     font-size: 16px;
     line-height: 20px;
@@ -638,8 +641,6 @@ secretcli keys list
   width: 100%;
   text-align: center;
 }
-
-
 
 .modal {
   position: fixed;
