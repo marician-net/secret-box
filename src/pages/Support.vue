@@ -311,6 +311,7 @@ export default {
   align-items: flex-start;
   overflow: hidden;
   background: var(--grayscale);
+  margin-top: 0;
 }
 .container-support {
   width: 100%;

@@ -530,6 +530,7 @@ docker run -it --rm \
   align-items: flex-start;
   overflow: hidden;
   background: var(--grayscale);
+  margin-top: 0;
 }
 .bg-launching {
   position: absolute;
@@ -560,7 +561,13 @@ docker run -it --rm \
     z-index: 10;
   }
   & .content {
-    margin-top: 400px;
+    margin-top: 40%;
+    @media (max-width:1024px){
+      margin-top:45%
+    }
+     @media (max-width:600px){
+      margin-top:110%
+    }
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.5px;
