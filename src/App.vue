@@ -6,8 +6,6 @@
       <router-view />
     </main>
     <FooterGlobal />
-
-    
   </div>
 </template>
 
