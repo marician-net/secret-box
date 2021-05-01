@@ -23,7 +23,7 @@ const routes = [
     component: Tutorial,
   },
   {
-    path: "/tutorial/launching",
+    path: "/tutorial-launching",
     name: "TutorialLaunching",
     component: TutorialLaunching,
   },

@@ -76,7 +76,7 @@
         <br />
         <button class="btn btn-primary-yellow btn-lg">
           <strong>Note:</strong> To stop the secretdev blockchain enter
-          <span class="btn btn-primary text-primary">ctrl + c</span>
+          <span class="btn-sm btn-primary text-primary">ctrl + c</span>
         </button>
         <br />
         <br />
@@ -468,9 +468,11 @@ docker run -it --rm \
 				{ "id": "5004", "type": "Maple" }
 			]
 	}`,
-    code6: `docker exec -it secretdev /bin/bash`,
+    code6: `
+  docker exec -it secretdev /bin/bash
+  `,
     code7: `
-  secretcli keys list
+secretcli keys list
   `,
     code8: `{
 		"id": "0001",
@@ -530,6 +532,7 @@ docker run -it --rm \
   align-items: flex-start;
   overflow: hidden;
   background: var(--grayscale);
+  margin-top: 0;
 }
 .bg-launching {
   position: absolute;
@@ -560,7 +563,10 @@ docker run -it --rm \
     z-index: 10;
   }
   & .content {
-    margin-top: 400px;
+    margin-top: 300px;
+    @media (max-width: 1024px) {
+        margin-top: 380px;
+    }
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.5px;
@@ -618,9 +624,12 @@ docker run -it --rm \
 .editor-layout {
   position: relative;
   & .btn-copy {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    margin-top: 10px;
+    @media (min-width:1024px){
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
     border-radius: 30px;
   }
 }
