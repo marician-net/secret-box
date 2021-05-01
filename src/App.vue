@@ -64,6 +64,7 @@ input:focus {
   --secondary-dark: #0096B7;
   --grayscale: #FCFCFC;
   --grayscale-title-active: #14142B;
+  --error-dark: #C30052;
   // Shadow
   --focus-shadow: 0px 0px 16px rgba(255, 217, 17, 0.35);
   --drop-shadow: 3px 6px 10px rgba(0, 0, 0, 0.25);
@@ -150,7 +151,8 @@ body {
     max-width: 1920px;
   }
 }
-main {
+.main {
+  width: 100%;
   margin-top: 185px;
   @media (max-width: 1024px) {
     margin-top: 80px;
