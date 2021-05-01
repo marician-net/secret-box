@@ -293,8 +293,8 @@
             </svg>
           </a>
         </div>
-        <img class="il-1" src="/img/ufo-2.png" alt="" />
-        <img class="bg-1" src="/img/bg1.png" alt="" />
+        <img class="il-1" src="/img/ufo-2.png" alt="il 1" />
+        <img class="bg-1" src="/img/bg1.png" alt="bg 1" />
       </div>
     </div>
 
@@ -308,17 +308,15 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 10%;
   align-items: center;
   align-content: center;
 }
 .tutorial {
-  padding: 50px 0;
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
   margin: auto;
-  margin-bottom: 150px;
   &__hero {
     
     padding: 0 30%;
@@ -394,21 +392,21 @@
       position: absolute;
       right: -5%;
       top: 30%;
-      // &:after {
-      //   border-bottom: 1px solid black;
-      //   border-right: 1px solid black;
-      //   border-bottom-right-radius: 50px;
-      //   content: "";
-      //   position: absolute;
-      //   top: 40px;
-      //   right: 20px;
-      //   height: 160px;
-      //   width: 800px;
-      //   z-index: -1;
-      //   @media (max-width: 1024px) {
-      //     height: 520px;
-      //   }
-      // }
+      &:after {
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom-right-radius: 50px;
+        content: "";
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        height: 160px;
+        width: 100%;
+        z-index: -1;
+        @media (max-width: 1024px) {
+          height: 520px;
+        }
+      }
     }
     & .icon-2 {
       position: absolute;
@@ -426,7 +424,6 @@
     }
   }
   & .step-end {
-    padding: 0 5%;
     flex-wrap: wrap;
     @media (max-width: 1024px) {
       width: auto;
@@ -437,8 +434,6 @@
       padding: 0 25%;
       text-align: center;
       margin: auto;
-      margin-top: 150px;
-      padding-bottom: 50px;
       @media (max-width: 404px) {
         padding: 0 10px;
       }
@@ -453,7 +448,7 @@
     & .bg-1 {
       width: 100%;
       position: absolute;
-      bottom: 70px;
+      bottom: 0;
       left: 0;
     }
   }

@@ -192,11 +192,13 @@
       </div>
       <div class="support-title">
         <h2>Support Ticket</h2>
+        <br>
         <p class="max-width">
           The best way to get support directly from SecretChainGirl Foundation!
           Open a support ticket to start a conversation with us. This will help
           us in building our FAQ to assist future Secret Boxers!
         </p>
+        <br>
       </div>
       <form action="#" class="form-support" @submit="submitData">
         <div class="form-group">

@@ -52,8 +52,8 @@
           />
         </svg>
       </li>
-      <li class="nav-dropdown" @click="toggleDropdown = !toggleDropdown">
-        <div class="nav-dropdown-link">
+      <li class="nav-dropdown" >
+        <div class="nav-dropdown-link" @click="toggleDropdown = !toggleDropdown">
           <span>Boxes</span>
           <svg
             width="8"
@@ -78,7 +78,7 @@
               : 'navbar-dropdown font-gobold'
           "
         >
-          <li @click="$router.push('/secret-counter')">
+          <li @click="to('/secret-counter')">
             <img src="/img/box-gray.png" alt="Secret Counter" />
             <h4>Secret Counter</h4>
           </li>
@@ -130,6 +130,10 @@ export default {
       this.toggleMenu = false;
       this.toggleDropdown = false;
     },
+    to(link){
+      this.toggleMenu = false;
+      this.$router.push(link)
+    }
   },
   watch: {
     $route(to, from) {
