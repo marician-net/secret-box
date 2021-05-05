@@ -33,6 +33,7 @@ export default {
   box-sizing: border-box;
 }
 
+
 // Reset Default Style
 a {
   text-decoration: none;
@@ -152,8 +153,12 @@ body {
 .main {
   width: 100%;
   margin-top: 185px;
+  font-size: 1rem;
   @media (max-width: 1024px) {
     margin-top: 80px;
+  }
+  @media (max-width: 250px) {
+    font-size: .5rem;
   }
 }
 

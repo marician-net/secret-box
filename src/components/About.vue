@@ -48,7 +48,7 @@
             src="https://assets5.lottiefiles.com/private_files/lf30_sqamzndl.json"
             background="transparent"
             speed="1"
-            style="width: 264px; height: 174px"
+            class="about__image"
             loop
             autoplay
           ></lottie-player>
@@ -67,9 +67,9 @@
               <br />
             </div>
             <div class="action">
-              <a href="#" class="btn btn-primary mr-3">Let’s Go!</a>
-              <a href="#" class="btn btn-secondary mr-3">Docs</a>
-              <a href="#" class="btn btn-secondary">
+              <a href="#" class="btn btn-sm btn-primary mr-3">Let’s Go!</a>
+              <a href="#" class="btn btn-sm btn-secondary mr-3">Docs</a>
+              <a href="#" class="btn btn-sm btn-secondary">
                 <svg
                   width="16"
                   height="16"
@@ -92,7 +92,7 @@
             src="https://assets2.lottiefiles.com/private_files/lf30_0vbtxqrd.json"
             background="transparent"
             speed="1"
-            style="width: 264px; height: 174px"
+            class="about__image"
             loop
             autoplay
           ></lottie-player>
@@ -110,8 +110,8 @@
               <br />
             </div>
             <div class="action">
-              <a href="#" class="btn btn-primary mr-3">Let’s Go!</a>
-              <a href="#" class="btn btn-secondary">Docs</a>
+              <a href="#" class="btn btn-sm btn-primary mr-3">Let’s Go!</a>
+              <a href="#" class="btn btn-sm btn-secondary">Docs</a>
             </div>
           </div>
         </li>
@@ -120,7 +120,7 @@
             src="https://assets10.lottiefiles.com/private_files/lf30_woabmjiz.json"
             background="transparent"
             speed="1"
-            style="width: 264px; height: 174px"
+            class="about__image"
             loop
             autoplay
           ></lottie-player>
@@ -138,8 +138,8 @@
               <br />
             </div>
             <div class="action">
-              <a href="#" class="btn btn-primary mr-3">Subscribe</a>
-              <a href="#" class="btn btn-secondary">Learn More</a>
+              <a href="#" class="btn btn-sm btn-primary mr-3">Subscribe</a>
+              <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
             </div>
           </div>
         </li>
@@ -155,6 +155,13 @@
   flex-wrap: wrap;
   width: 100%;
   background: var(--grayscale);
+  &__image{
+    width: 264px; height: 174px;
+    @media (max-width: 404px) {
+      width: 100%;
+      height: auto;
+    }
+  }
   &__left {
     padding-right: 50px;
     width: 50%;
@@ -195,8 +202,12 @@
       & li {
         display: flex;
         margin-top: 80px;
-        height: 200px;
+        min-height: 200px;
         width: 100%;
+        @media (max-width: 1024px) {
+          flex-wrap: wrap;
+          height: auto;
+        }
         @media (max-width: 414px) {
           justify-content: center;
           justify-items: center;
@@ -206,7 +217,7 @@
         & img {
           width: 40%;
           @media (max-width: 1440px) {
-            width: 25%;
+            width: 20%;
           }
           @media (max-width: 414px) {
             width: 100%;
@@ -216,7 +227,7 @@
         & .box-item {
           width: 60%;
           @media (max-width: 1440px) {
-            width: 75%;
+            width: 80%;
           }
           @media (max-width: 414px) {
             width: 100%;
@@ -224,37 +235,48 @@
           & .text {
             width: 100%;
             & .btn {
-              margin-left: 16px;
+              margin-left: 10px;
             }
           }
           & .title {
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             align-content: center;
             margin-top: 60px;
+            @media (max-width: 1024px) {
+              justify-items: center;
+              justify-content: center;
+            }
             @media (max-width: 414px) {
               margin-top: 0;
+              text-align: center;
+            }
+            & .btn{
+              padding:2px 4px;
             }
           }
           & .action {
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
+            @media (max-width: 1024px) {
+             & .btn{
+               display: inline-block;
+               margin-bottom: 16px;
+             }
+            }
           }
-
-          & .action {
-            display: none;
-          }
-          & .description {
+          & .action, .description {
             display: none;
           }
           &:hover .title {
             margin-top: 0;
           }
           &:hover .action {
-            display: flex;
+             display: block;
           }
-
           &:hover .description {
             display: block;
           }
