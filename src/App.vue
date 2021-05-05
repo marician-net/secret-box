@@ -201,7 +201,6 @@ body {
   background: #fff2b7;
 }
 
-
 .btn-link {
   padding:8px;
   background: #fcfcfc;

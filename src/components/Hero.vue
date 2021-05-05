@@ -5,7 +5,8 @@
       <p class="description">
         The beautiful, fun and easy way to get started building Secret Apps.
       </p>
-      <a class="btn btn-primary btn-lg btn-icon-hover" href="#"
+      <router-link class="btn btn-primary btn-lg btn-icon-hover"
+        to="/box-default"
         >Start Unboxing
 
         <svg
@@ -30,7 +31,8 @@
             stroke-linejoin="round"
           />
         </svg>
-      </a>
+      </router-link>
+
       <a class="btn btn-secondary btn-lg" href="#">Tutorials</a>
     </div>
     <div class="hero__image">

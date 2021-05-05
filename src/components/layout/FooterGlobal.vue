@@ -37,7 +37,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .footer-index {
