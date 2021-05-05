@@ -132,6 +132,7 @@ export default {
     },
     to(link){
       this.toggleMenu = false;
+      this.toggleDropdown = false;
       this.$router.push(link)
     }
   },

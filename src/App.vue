@@ -138,7 +138,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .app {

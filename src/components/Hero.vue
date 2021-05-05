@@ -66,17 +66,17 @@
 
 <script>
 export default {
-  methods:{
+  methods: {
     scrollToElement() {
-      const el = this.$el.getElementsByClassName('next-to-about')[0];
-      console.log(el)
+      const el = this.$el.getElementsByClassName("next-to-about")[0];
+      console.log(el);
       if (el) {
         // Use el.scrollIntoView() to instantly scroll to the element
-        el.scrollIntoView({behavior: 'smooth'});
+        el.scrollIntoView({ behavior: "smooth" });
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
 .hero {
@@ -85,7 +85,7 @@ export default {
   flex-wrap: wrap;
   width: 100vw;
   min-height: 714px;
-    background: var(--grayscale);
+  background: var(--grayscale);
 
   &__text {
     width: 50%;
