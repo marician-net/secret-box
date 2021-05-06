@@ -96,7 +96,7 @@
         <a href="#">Docs</a>
       </li>
       <li>
-        <a href="#">Updates</a>
+        <a @click="to('/news')" href="#">Updates</a>
       </li>
       <li>
         <router-link to="/tutorial">Tutorial</router-link>

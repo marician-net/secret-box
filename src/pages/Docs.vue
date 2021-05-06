@@ -48,6 +48,32 @@
           </li>
         </ul>
       </li>
+      <li>
+        <h6 style="display:flex">
+          <span >FAQ </span>
+            <svg style="margin-left:10px" width="20" height="20" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.7161 14.7234H5.49609" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.7161 10.5369H5.49609" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.25109 6.36011H5.49609" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9085 1.24976C12.9085 1.24976 5.23149 1.25376 5.21949 1.25376C2.45949 1.27076 0.750488 3.08676 0.750488 5.85676V15.0528C0.750488 17.8368 2.47249 19.6598 5.25649 19.6598C5.25649 19.6598 12.9325 19.6568 12.9455 19.6568C15.7055 19.6398 17.4155 17.8228 17.4155 15.0528V5.85676C17.4155 3.07276 15.6925 1.24976 12.9085 1.24976Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </h6>
+      </li>
+      <li>
+        <h6>
+          <div class="form-group">
+              <span>
+             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="7.84442" cy="7.84442" r="5.99237" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.0122 12.3235L14.3616 14.6667" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+              </span>
+            <input type="text"  placeholder="Search">
+          </div>
+        </h6>
+      </li>
     </ul>
     <ul class="list-box">
       <li class="content-center">
@@ -255,7 +281,7 @@ export default {
   flex-wrap: wrap;
   & .list-menu {
     list-style: none;
-    width: 25%;
+    width: 30%;
     @media (max-width:1024px) {
       width: 100%;
     }
@@ -267,10 +293,7 @@ export default {
         margin: 0 10%;
         padding: 16px;
         width: 80%;
-        &:hover {
-          background: var(--primary);
-        }
-        border-bottom: 1px solid var(--dark);
+        border-bottom: 1px solid #c2c2e3;
       }
       & ul {
         margin-left: 20px;
@@ -280,12 +303,31 @@ export default {
           & svg {
             margin-right: 10px;
           }
+          &:hover {
+            background: var(--primary);
+          }
+        }
+      }
+      &  .form-group {
+        border: 1px solid #4e4b66;
+        padding: 8px;
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        & span{
+          width: 24px;
+        }
+        & input{
+          border: 0;
+          width: 100%;
+          border-radius: 10px;
+          padding: 2px 4px;
         }
       }
     }
   }
   & .list-box {
-    width: 75%;
+    width: 70%;
     @media (max-width:1024px) {
       width: 100%;
     }
@@ -301,6 +343,9 @@ export default {
           position: absolute;
           top: 40%;
           right: 20%;
+          @media (max-width:600px){
+            right: 2%;
+          }
         }
       }
       & .dropdown-btn {

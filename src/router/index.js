@@ -7,6 +7,7 @@ import Support from "../pages/Support.vue";
 import ExampleComponent from "../pages/ExampleComponent.vue";
 import BoxDefault from "../pages/BoxDefault.vue";
 import Docs from "../pages/Docs.vue";
+import News from "../pages/News.vue";
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     path: "/docs",
     name: "Docs",
     component: Docs
+  },
+  {
+    path: "/news",
+    name: "News",
+    component: News
   }
 ];
 
