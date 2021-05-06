@@ -97,9 +97,7 @@
                 />
               </svg>
             </div>
-            <ul
-              :class="dropDownChat ? 'dropdown-list active' : 'dropdown-list'"
-            >
+            <ul class="dropdown-list">
               <li>
                 <h6>Join Chat</h6>
               </li>
@@ -353,6 +351,9 @@ export default {
         position: relative;
         width: 50px;
         margin-left: 30px;
+         &:hover .dropdown-list{
+          display: inline-block;
+        }
         & .dropdown-list {
           &:after {
             content: "";
@@ -381,9 +382,7 @@ export default {
             }
           }
         }
-        & .active {
-          display: inline-block;
-        }
+       
       }
       & code {
         text-align: left;
