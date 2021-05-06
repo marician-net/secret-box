@@ -262,13 +262,13 @@
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      dropDownChat: false,
-    };
-  },
-};
+// export default {
+//   data() {
+//     return {
+//       dropDownChat: false,
+//     };
+//   },
+// };
 </script>
 <style lang="scss" scoped>
 .box {

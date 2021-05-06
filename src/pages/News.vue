@@ -3,6 +3,25 @@
     <img class="bg-news" src="/img/bg-news.png" alt="launcing" />
     <div class="container_news">
       <h1 class="title">News & Updates</h1>
+      <div class="search-menu">
+        <div class="form-control">
+             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7.84394" cy="7.84442" r="5.99237" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.0117 12.3235L14.3611 14.6667" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+            <input v-model="searchDataValue" type="text" placeholder="Search .." @keyup="searchDataFilter()" >
+    </div>
+        <ul v-if="searchDataActive">
+          <li v-for="s in searchDataView" :key="s.id" >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7.84394" cy="7.84442" r="5.99237" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.0117 12.3235L14.3611 14.6667" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            {{ s.name }}
+          </li>
+        </ul>
+      </div>
       <div class="highlights-list">
         <div class="list-card">
           <h6 class="sub-title">
@@ -112,7 +131,7 @@
           </svg>
           Highlights
         </h6>
-        <div class="card" v-for="i in 3" :key="i">
+        <div class="card" v-for="n in newsFeed" :key="n.id">
           <div class="card-body">
             <div>
               <svg
@@ -135,18 +154,17 @@
                 />
               </svg>
 
-              Secret Agent
+              {{ n.anchor }}
             </div>
             <br />
-            <h5>“GripTape” Secret Box Launching</h5>
+            <h5>{{ n.title }}</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. placerat
-              lorem ac et a libero iaculis pellentesque...
+              {{ n.desc }}
             </p>
             <div class="action">
-              Mar 3 . 8 min read
+              {{ n.date }} . {{ n.read_time }}
               <div class="dropdown-btn">
-                <div class="dropdown-icon" >
+                <div class="dropdown-icon">
                   <svg
                     width="16"
                     height="16"
@@ -167,11 +185,13 @@
                   </svg>
                 </div>
                 <ul class="dropdown-list">
-                      <li>
-                        <button>copythislink.com/share</button>
-                        <button>copy link</button>
-                      </li>
-                    </ul>
+                  <li>
+                    <a :href="n.link" target="_BLANK" class="dropdown-link">{{ n.link }}</a>
+                    <a class="dropdown-copy"
+                    @click="copyLink(n.link)"
+                    >copy link</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -183,14 +203,96 @@
       </div>
     </div>
   </section>
+
+    <input type="hidden" ref="copydata" value="" />
+
 </template>
 
 <script>
-// export default {
-//   data: () => ({
-//     dropDownShare: false,
-//   }),
-// };
+export default {
+  data: () => ({
+    searchDataActive: false,
+    searchDataValue: '',
+    searchDataView: [],
+    searchData: [
+      {
+        id: 1,
+        name: "Grey Box"
+      },
+
+      {
+        id: 2,
+        name: "Grey Paper Box"
+      },
+
+      {
+        id: 3,
+        name: "Grey Salsa Sause"
+      },
+       {
+        id: 4,
+        name: "Grey Rich"
+      }
+    ],
+    newsFeed: [
+      {
+        id: 1,
+        anchor: "Secret Agent",
+        title: "“GripTape” Secret Box Launching",
+        desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. placerat lorem ac et a libero iaculis pellentesque...",
+        date: "Mar 3",
+        read_time: "8 min",
+        link: "copythislink.com/share",
+      },
+      {
+        id: 2,
+        anchor: "Secret Agent",
+        title: "“GripTape” Secret Box Launching",
+        desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. placerat lorem ac et a libero iaculis pellentesque...",
+        date: "Mar 3",
+        read_time: "8 min",
+        link: "copythislink.com/share",
+      },
+      {
+        id: 3,
+        anchor: "Secret Agent",
+        title: "“GripTape” Secret Box Launching",
+        desc:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. placerat lorem ac et a libero iaculis pellentesque...",
+        date: "Mar 3",
+        read_time: "8 min",
+        link: "copythislink.com/share",
+      },
+    ],
+  }),
+  methods:{
+     copyLink(text) {
+      this.$refs.copydata.setAttribute("value", text);
+      this.$refs.copydata.setAttribute("type", "text");
+      this.$refs.copydata.select();
+      try {
+        var successful = document.execCommand("copy");
+        // var msg = successful ? 'successful' : 'unsuccessful';
+        // alert('Code was copied ' + msg);
+      } catch (err) {
+        // alert('Oops, unable to copy');
+      }
+      /* unselect the range */
+      this.$refs.copydata.setAttribute("type", "hidden");
+      window.getSelection().removeAllRanges();
+    },
+    searchDataFilter(){
+      this.searchDataActive = true;
+      this.searchDataView = this.searchData.filter(s => {
+        let nameUpp = s.name.toUpperCase()
+        let searchUpp = this.searchDataValue.toUpperCase()
+        return nameUpp.includes(searchUpp)
+      })
+    }
+  }
+};
 </script>
 <style lang="scss" scoped>
 .main {
@@ -218,21 +320,70 @@
   }
 }
 .container_news {
-  margin-top: 300px;
   width: 100%;
   padding: 0 10%;
+  padding-top: 280px;
   @media (max-width: 1024px) {
     padding: 0 5%;
+    padding-top: 350px;
   }
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  & .search-menu{
+    width: 30%;
+    right: 20%;
+    position: absolute;
+    top: 50px;
+    color: white;
+   @media (max-width: 1024px) {
+      text-align: center;
+      left: 5%;
+      top: 200px;
+      width: 90%;
+    }
+    & .form-control{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 15px;
+        border:0;
+      & input{
+          width: 90%;
+          padding: 16px;
+          border-radius: 15px;
+          border:0
+        }
+    }
+     & ul{
+        border-radius: 15px;
+        margin-top: 10px;
+        background: white;
+        list-style: none;
+        & li{
+          cursor: pointer;
+          border-radius: 15px;
+           padding: 8px 16px;
+           color:var(--background);
+           &:hover{
+             background: var(--primary);
+           }
+        }
+
+      }
+  }
   & .title {
     position: absolute;
+    top:30px;
     left: 20%;
-    top: -250px;
     color: white;
     z-index: 10;
+     @media (max-width: 1024px) {
+      text-align: center;
+      left: 0;
+      width: 100%;
+    }
   }
   & .highlights-list {
     width: 50%;
@@ -286,41 +437,55 @@
       width: 100%;
     }
   }
-  & .action{
+  & .action {
     display: flex;
     flex-wrap: wrap;
     & .dropdown-btn {
-        cursor: pointer;
-        position: relative;
-        width: 50px;
-        margin-left: 30px;
-        &:hover .dropdown-list{
-          display: inline-block;
-        }
-        & .dropdown-list {
-          &:after {
-            content: "";
-            position: absolute;
-            left: 150px;
-            margin-left: -5px;
-            top: -20px;
-            transform: rotate(90deg);
-            border: 10px solid #eff0f7;
-            border-color: transparent #eff0f7 transparent transparent;
-          }
-          min-width: 300px;
-          display: none;
-          list-style: none;
+      cursor: pointer;
+      position: relative;
+      width: 50px;
+      margin-left: 30px;
+      &:hover .dropdown-list {
+        display: inline-block;
+      }
+      & .dropdown-list {
+        &:after {
+          content: "";
           position: absolute;
-          background: #eff0f7;
-          border-radius: 2px;
-          top: 20px;
-          left: -150px;
-          & li {
-            padding: 8px 16px;
+          left: 150px;
+          margin-left: -5px;
+          top: -20px;
+          transform: rotate(90deg);
+          border: 10px solid #eff0f7;
+          border-color: transparent #eff0f7 transparent transparent;
+        }
+        min-width: 300px;
+        padding: 8px 4px;
+        display: none;
+        list-style: none;
+        position: absolute;
+        background: #eff0f7;
+        border-radius: 10px;
+        top: 20px;
+        left: -150px;
+        & li {
+          padding: 16px;
+          & .dropdown-link {
+            background: #d9dbe9;
+            border-radius: 10px;
+            padding: 8px;
+            margin-right: 8px;
+            cursor: pointer;
+          }
+          & .dropdown-copy {
+            background: white;
+            border-radius: 10px;
+            padding: 8px;
+            cursor: pointer;
           }
         }
       }
+    }
   }
 }
 .card:hover {
