@@ -5,19 +5,60 @@
       <h1 class="title">News & Updates</h1>
       <div class="search-menu">
         <div class="form-control">
-             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="7.84394" cy="7.84442" r="5.99237" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12.0117 12.3235L14.3611 14.6667" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="7.84394"
+              cy="7.84442"
+              r="5.99237"
+              stroke="#200E32"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12.0117 12.3235L14.3611 14.6667"
+              stroke="#200E32"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
 
-            <input v-model="searchDataValue" type="text" placeholder="Search .." @keyup="searchDataFilter()" >
-    </div>
+          <input
+            v-model="searchDataValue"
+            type="text"
+            placeholder="Search .."
+            @keyup="searchDataFilter()"
+          />
+        </div>
         <ul v-if="searchDataActive">
-          <li v-for="s in searchDataView" :key="s.id" >
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="7.84394" cy="7.84442" r="5.99237" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12.0117 12.3235L14.3611 14.6667" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          <li v-for="s in searchDataView" :key="s.id">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="7.84394"
+                cy="7.84442"
+                r="5.99237"
+                stroke="#200E32"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.0117 12.3235L14.3611 14.6667"
+                stroke="#200E32"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
             {{ s.name }}
           </li>
         </ul>
@@ -156,7 +197,7 @@
 
               {{ n.anchor }}
             </div>
-            
+
             <br />
             <h5>{{ n.title }}</h5>
             <p>
@@ -187,10 +228,12 @@
                 </div>
                 <ul class="dropdown-list">
                   <li>
-                    <a :href="n.link" target="_BLANK" class="dropdown-link">{{ n.link }}</a>
-                    <a class="dropdown-copy"
-                    @click="copyLink(n.link)"
-                    >copy link</a>
+                    <a :href="n.link" target="_BLANK" class="dropdown-link">{{
+                      n.link
+                    }}</a>
+                    <a class="dropdown-copy" @click="copyLink(n.link)"
+                      >copy link</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -204,7 +247,7 @@
 
         <div class="card">
           <div class="card-body">
-            <div  class="load_anchor">
+            <div class="load_anchor">
               <div class="load_icon"></div>
               <div class="load_name"></div>
             </div>
@@ -220,35 +263,34 @@
     </div>
   </section>
 
-    <input type="hidden" ref="copydata" value="" />
-
+  <input type="hidden" ref="copydata" value="" />
 </template>
 
 <script>
 export default {
   data: () => ({
     searchDataActive: false,
-    searchDataValue: '',
+    searchDataValue: "",
     searchDataView: [],
     searchData: [
       {
         id: 1,
-        name: "Grey Box"
+        name: "Grey Box",
       },
 
       {
         id: 2,
-        name: "Grey Paper Box"
+        name: "Grey Paper Box",
       },
 
       {
         id: 3,
-        name: "Grey Salsa Sause"
+        name: "Grey Salsa Sause",
       },
-       {
+      {
         id: 4,
-        name: "Grey Rich"
-      }
+        name: "Grey Rich",
+      },
     ],
     newsFeed: [
       {
@@ -270,11 +312,11 @@ export default {
         date: "Mar 3",
         read_time: "8 min",
         link: "copythislink.com/share",
-      }
+      },
     ],
   }),
-  methods:{
-     copyLink(text) {
+  methods: {
+    copyLink(text) {
       this.$refs.copydata.setAttribute("value", text);
       this.$refs.copydata.setAttribute("type", "text");
       this.$refs.copydata.select();
@@ -289,15 +331,15 @@ export default {
       this.$refs.copydata.setAttribute("type", "hidden");
       window.getSelection().removeAllRanges();
     },
-    searchDataFilter(){
+    searchDataFilter() {
       this.searchDataActive = true;
-      this.searchDataView = this.searchData.filter(s => {
-        let nameUpp = s.name.toUpperCase()
-        let searchUpp = this.searchDataValue.toUpperCase()
-        return nameUpp.includes(searchUpp)
-      })
-    }
-  }
+      this.searchDataView = this.searchData.filter((s) => {
+        let nameUpp = s.name.toUpperCase();
+        let searchUpp = this.searchDataValue.toUpperCase();
+        return nameUpp.includes(searchUpp);
+      });
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -336,56 +378,55 @@ export default {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  & .search-menu{
+  & .search-menu {
     width: 30%;
     right: 20%;
     position: absolute;
     top: 50px;
     color: white;
-   @media (max-width: 1024px) {
+    @media (max-width: 1024px) {
       text-align: center;
       left: 5%;
       top: 200px;
       width: 90%;
     }
-    & .form-control{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: white;
+    & .form-control {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      border-radius: 15px;
+      border: 0;
+      & input {
+        width: 90%;
+        padding: 16px;
         border-radius: 15px;
-        border:0;
-      & input{
-          width: 90%;
-          padding: 16px;
-          border-radius: 15px;
-          border:0
-        }
-    }
-     & ul{
-        border-radius: 15px;
-        margin-top: 10px;
-        background: white;
-        list-style: none;
-        & li{
-          cursor: pointer;
-          border-radius: 15px;
-           padding: 8px 16px;
-           color:var(--background);
-           &:hover{
-             background: var(--primary);
-           }
-        }
-
+        border: 0;
       }
+    }
+    & ul {
+      border-radius: 15px;
+      margin-top: 10px;
+      background: white;
+      list-style: none;
+      & li {
+        cursor: pointer;
+        border-radius: 15px;
+        padding: 8px 16px;
+        color: var(--background);
+        &:hover {
+          background: var(--primary);
+        }
+      }
+    }
   }
   & .title {
     position: absolute;
-    top:30px;
+    top: 30px;
     left: 20%;
     color: white;
     z-index: 10;
-     @media (max-width: 1024px) {
+    @media (max-width: 1024px) {
       text-align: center;
       left: 0;
       width: 100%;
@@ -428,53 +469,53 @@ export default {
     text-align: center;
   }
 
-  & .load_anchor{
+  & .load_anchor {
     display: flex;
-    & .load_icon{
-      background: #F7F7FC;
+    & .load_icon {
+      background: #f7f7fc;
       width: 20px;
       height: 20px;
       border-radius: 10px;
       margin-right: 10px;
     }
-    & .load_name{
-      background: #F7F7FC;
+    & .load_name {
+      background: #f7f7fc;
       width: 150px;
       height: 20px;
       border-radius: 10px;
     }
   }
-  & .load_title{
+  & .load_title {
     margin-top: 10px;
-    background: #F7F7FC;
+    background: #f7f7fc;
     width: 100%;
     height: 20px;
     border-radius: 10px;
     margin-right: 10px;
   }
-  & .load_desc{
+  & .load_desc {
     margin-top: 10px;
-    background: #F7F7FC;
+    background: #f7f7fc;
     width: 100%;
     height: 20px;
     border-radius: 10px;
     margin-right: 10px;
   }
-  & .load_action{
+  & .load_action {
     margin-top: 30px;
-    background: #F7F7FC;
+    background: #f7f7fc;
     width: 100px;
     height: 20px;
     border-radius: 10px;
     margin-right: 10px;
   }
-  .load_image{
+  .load_image {
     height: 148px;
     width: 240px;
-    background: #F7F7FC;
+    background: #f7f7fc;
     border-radius: 10px;
     margin-right: 30px;
-    @media (max-width:1024px){
+    @media (max-width: 1024px) {
       width: 100%;
       margin-top: 10px;
     }
@@ -497,12 +538,12 @@ export default {
     }
   }
   & .action {
-    width:100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    @media (max-width:1024px){
-       justify-items: center;
-       justify-content: center;
+    @media (max-width: 1024px) {
+      justify-items: center;
+      justify-content: center;
     }
     & .dropdown-btn {
       cursor: pointer;
