@@ -156,6 +156,7 @@
 
               {{ n.anchor }}
             </div>
+            
             <br />
             <h5>{{ n.title }}</h5>
             <p>
@@ -198,6 +199,21 @@
 
           <div class="card-image">
             <img src="/img/news-1.png" alt="News" />
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div  class="load_anchor">
+              <div class="load_icon"></div>
+              <div class="load_name"></div>
+            </div>
+            <div class="load_title"></div>
+            <div class="load_desc"></div>
+            <div class="load_action"></div>
+          </div>
+          <div class="card-image">
+            <div class="load_image"></div>
           </div>
         </div>
       </div>
@@ -254,17 +270,7 @@ export default {
         date: "Mar 3",
         read_time: "8 min",
         link: "copythislink.com/share",
-      },
-      {
-        id: 3,
-        anchor: "Secret Agent",
-        title: "“GripTape” Secret Box Launching",
-        desc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. placerat lorem ac et a libero iaculis pellentesque...",
-        date: "Mar 3",
-        read_time: "8 min",
-        link: "copythislink.com/share",
-      },
+      }
     ],
   }),
   methods:{
@@ -421,8 +427,61 @@ export default {
     justify-content: center;
     text-align: center;
   }
+
+  & .load_anchor{
+    display: flex;
+    & .load_icon{
+      background: #F7F7FC;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+    & .load_name{
+      background: #F7F7FC;
+      width: 150px;
+      height: 20px;
+      border-radius: 10px;
+    }
+  }
+  & .load_title{
+    margin-top: 10px;
+    background: #F7F7FC;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  & .load_desc{
+    margin-top: 10px;
+    background: #F7F7FC;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  & .load_action{
+    margin-top: 30px;
+    background: #F7F7FC;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  .load_image{
+    height: 148px;
+    width: 240px;
+    background: #F7F7FC;
+    border-radius: 10px;
+    margin-right: 30px;
+    @media (max-width:1024px){
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
   & .card-body {
     padding: 5%;
+    width: 100%;
   }
   & .card-image {
     margin-left: auto;
@@ -438,8 +497,13 @@ export default {
     }
   }
   & .action {
+    width:100%;
     display: flex;
     flex-wrap: wrap;
+    @media (max-width:1024px){
+       justify-items: center;
+       justify-content: center;
+    }
     & .dropdown-btn {
       cursor: pointer;
       position: relative;
