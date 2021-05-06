@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <router-link to="/" class="logo">
-      <img src="/logo.png" alt="Secret Box Logo" />
+      <img src="/Logo Black.png" alt="Secret Box Logo" />
     </router-link>
     <div class="btn-menu" @click="toggleMenu = !toggleMenu">
       <svg
@@ -92,7 +92,7 @@
           </li>
         </ul>
       </li>
-      <li>
+      <li @click="to('/docs')">
         <a href="#">Docs</a>
       </li>
       <li>
@@ -173,7 +173,7 @@ export default {
     display: none;
   }
   & a {
-    padding: 5px;
+    padding: 3px 5px;
   }
   & .logo {
     z-index: 1204;
