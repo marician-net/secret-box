@@ -37,6 +37,7 @@
         </div>
         <ul v-if="searchDataActive">
           <li v-for="s in searchDataView" :key="s.id">
+            <a href="#" @click="searchDataView = []">
             <svg
               width="16"
               height="16"
@@ -60,6 +61,7 @@
               />
             </svg>
             {{ s.name }}
+            </a>
           </li>
         </ul>
       </div>
@@ -289,7 +291,23 @@ export default {
       },
       {
         id: 4,
-        name: "Grey Rich",
+        name: "Box 1",
+      },
+      {
+        id: 5,
+        name: "Box 2",
+      },
+      {
+        id: 6,
+        name: "Box 3",
+      },
+      {
+        id: 7,
+        name: "Box 4",
+      },
+      {
+        id: 8,
+        name: "Box 5",
       },
     ],
     newsFeed: [
@@ -407,6 +425,8 @@ export default {
       margin-top: 10px;
       background: white;
       list-style: none;
+      max-height: 250px;
+      overflow-y: scroll;
       & li {
         cursor: pointer;
         border-radius: 15px;
