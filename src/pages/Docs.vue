@@ -270,7 +270,13 @@ export default {
   },
   methods:{
     subListMenuActive(id){
-      this.menuActive.push(id)
+      if(!this.menuActive.includes(id)){
+        this.menuActive.push(id)
+      }else{
+        this.menuActive = this.menuActive.filter(i => {
+          i.id !== id
+        })
+      }
     }
   }
 };
