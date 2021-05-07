@@ -6,6 +6,9 @@ import TutorialLaunching from "../pages/TutorialLaunching.vue";
 import Support from "../pages/Support.vue";
 import ExampleComponent from "../pages/ExampleComponent.vue";
 import BoxDefault from "../pages/BoxDefault.vue";
+import Docs from "../pages/Docs.vue";
+import News from "../pages/News.vue";
+import ArticlePage from "../pages/ArticlePage.vue";
 
 const routes = [
   {
@@ -42,6 +45,21 @@ const routes = [
     path: "/box-default",
     name: "BoxDefault",
     component: BoxDefault
+  },
+  {
+    path: "/docs",
+    name: "Docs",
+    component: Docs
+  },
+  {
+    path: "/news",
+    name: "News",
+    component: News
+  },
+  {
+    path: "/article-page",
+    name: "ArticlePage",
+    component: ArticlePage
   }
 ];
 

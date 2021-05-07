@@ -15,7 +15,7 @@
             <div class="text">
               <h3 class="title">
                 SECRET COUNTER
-                <a class="btn btn-secondary btn-sm" href="#">New</a>
+                <a class="btn btn-secondary " href="#">New</a>
               </h3>
               <br />
               <p class="description">
@@ -24,9 +24,9 @@
               <br />
             </div>
             <div class="action">
-              <a href="#" class="btn btn-sm btn-primary mr-3">Let’s Go!</a>
-              <a href="#" class="btn btn-sm btn-secondary mr-3">Docs</a>
-              <a href="#" class="btn btn-sm btn-secondary">
+              <a href="#" class="btn  btn-primary mr-3">Let’s Go!</a>
+              <a href="#" class="btn  btn-secondary mr-3">Docs</a>
+              <a href="#" class="btn  btn-secondary">
                 <svg
                   width="16"
                   height="16"
@@ -57,7 +57,7 @@
             <div class="text">
               <h3 class="title">
                 FIGMENT LEARN
-                <a class="btn btn-secondary btn-sm" href="#">New</a>
+                <a class="btn btn-secondary " href="#">New</a>
               </h3>
               <br />
               <p class="description">
@@ -66,8 +66,8 @@
               <br />
             </div>
             <div class="action">
-              <a href="#" class="btn btn-sm btn-primary mr-3">Let’s Go!</a>
-              <a href="#" class="btn btn-sm btn-secondary">Docs</a>
+              <a href="#" class="btn  btn-primary mr-3">Let’s Go!</a>
+              <a href="#" class="btn  btn-secondary">Docs</a>
             </div>
           </div>
         </li>
@@ -84,7 +84,7 @@
             <div class="text">
               <h3 class="title">
                 RICHIE RICH
-                <a class="btn btn-secondary btn-sm" href="#">Coming Soon</a>
+                <a class="btn btn-secondary " href="#">Coming Soon</a>
               </h3>
               <br />
               <p class="description">
@@ -93,8 +93,8 @@
               <br />
             </div>
             <div class="action">
-              <a href="#" class="btn btn-sm btn-primary mr-3">Subscribe</a>
-              <a href="#" class="btn btn-sm btn-secondary">Learn More</a>
+              <a href="#" class="btn  btn-primary mr-3">Subscribe</a>
+              <a href="#" class="btn  btn-secondary">Learn More</a>
             </div>
           </div>
         </li>
