@@ -273,8 +273,8 @@ export default {
       if(!this.menuActive.includes(id)){
         this.menuActive.push(id)
       }else{
-        this.menuActive = this.menuActive.filter(i => {
-          i.id !== id
+        this.menuActive.filter(i => {
+          return i !== id
         })
       }
     }
