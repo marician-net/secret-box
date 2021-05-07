@@ -2,8 +2,8 @@
   <div class="box">
     <ul class="list-menu">
       <li v-for="i in 10" :key="i">
-        <h6>Lorem ipsum {{ i }}</h6>
-        <ul v-if="i == 3">
+        <h6 @click="subListMenuActive(i)">Lorem ipsum {{ i }}</h6>
+        <ul :class="(menuActive.includes(i))? 'sub-list-menu active' : 'sub-list-menu'">
           <li>
             <h6>
               <svg
@@ -262,13 +262,18 @@
   </div>
 </template>
 <script>
-// export default {
-//   data() {
-//     return {
-//       dropDownChat: false,
-//     };
-//   },
-// };
+export default {
+  data() {
+    return {
+      menuActive: [],
+    };
+  },
+  methods:{
+    subListMenuActive(id){
+      this.menuActive.push(id)
+    }
+  }
+};
 </script>
 <style lang="scss" scoped>
 .box {
@@ -284,6 +289,7 @@
       width: 100%;
     }
     margin: 0;
+
     & li {
       cursor: pointer;
       background: white;
@@ -292,6 +298,10 @@
         padding: 16px;
         width: 80%;
         border-bottom: 1px solid #c2c2e3;
+        &:hover {
+          border-radius: 2px;
+            background: var(--primary);
+      }
       }
       & ul {
         margin-left: 20px;
@@ -300,9 +310,6 @@
           display: flex;
           & svg {
             margin-right: 10px;
-          }
-          &:hover {
-            background: var(--primary);
           }
         }
       }
@@ -315,6 +322,9 @@
         & span{
           width: 24px;
         }
+        &:hover input{
+            background: var(--primary);
+          }
         & input{
           border: 0;
           width: 100%;
@@ -322,6 +332,13 @@
           padding: 2px 4px;
         }
       }
+
+      & .sub-list-menu{
+        display: none;
+      }
+       & .active{
+          display: block;
+        }
     }
   }
   & .list-box {
@@ -382,7 +399,6 @@
             }
           }
         }
-       
       }
       & code {
         text-align: left;

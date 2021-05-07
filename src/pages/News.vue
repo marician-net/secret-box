@@ -356,15 +356,13 @@ export default {
 .bg-news {
   position: absolute;
   width: 100%;
+  height: 200px;
   left: 0;
   // overflow: hidden;
   @media (max-width: 1024px) {
-    width: 250%;
+    height: 300px;
     left: -50%;
-  }
-  @media (max-width: 600px) {
-    width: 550%;
-    left: -250%;
+    width: 200%;
   }
 }
 .container_news {
@@ -384,11 +382,11 @@ export default {
     position: absolute;
     top: 50px;
     color: white;
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
       text-align: center;
-      left: 5%;
+      left: 10%;
       top: 200px;
-      width: 90%;
+      width: 80%;
     }
     & .form-control {
       display: flex;
@@ -426,7 +424,7 @@ export default {
     left: 20%;
     color: white;
     z-index: 10;
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
       text-align: center;
       left: 0;
       width: 100%;
