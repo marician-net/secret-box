@@ -5,6 +5,7 @@ import Tutorial from "../pages/Tutorial.vue";
 import TutorialLaunching from "../pages/TutorialLaunching.vue";
 import Support from "../pages/Support.vue";
 import ExampleComponent from "../pages/ExampleComponent.vue";
+import BoxDefault from "../pages/BoxDefault.vue";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/example-component",
     name: "ExampleComponent",
     component: ExampleComponent
+  },
+  {
+    path: "/box-default",
+    name: "BoxDefault",
+    component: BoxDefault
   }
 ];
 
