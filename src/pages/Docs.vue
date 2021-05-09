@@ -132,8 +132,10 @@
             </p>
             <br />
           </div>
+<div class="image">
           <img src="/img/ufo-5.png" alt="Lorem">
 
+</div>
       </li>
       <li >
           <div class="text">
@@ -152,7 +154,9 @@
             </p>
             <br />
           </div>
-          <img src="/img/ufo-5.png" alt="Lorem">
+         <div class="image">
+            <img src="/img/ufo-5.png" alt="Lorem">
+         </div>
 
       </li>
       <li >
@@ -428,9 +432,15 @@ export default {
         margin: 30px 0;
         @media (max-width: 1024px) {
             width: 100%;
+            margin-bottom: 30px;
         }
         & img {
-          width: 40%
+          height:100%;
+          @media (max-width: 1024px) {
+            width: 80%;
+            height: auto;
+            margin: 0;
+          }
         }
       }
       & .box-item {
