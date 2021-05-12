@@ -7,7 +7,7 @@
       <div class="left">
         <a terget="_BLANK" href="http://secretchaingirl.foundation/">SCG Foundation</a>
         <a href="#">Contact</a>
-        <a href="#">Support </a>
+        <router-link to="/support">Support </router-link>
         <a href="#">Team </a>
         <a href="#">Privacy Policy </a>
       </div>
