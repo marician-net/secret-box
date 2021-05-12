@@ -5,7 +5,7 @@
     </nav>
     <nav class="footer-bar2">
       <div class="left">
-        <a href="#">SCG Foundation</a>
+        <a terget="_BLANK" href="http://secretchaingirl.foundation/">SCG Foundation</a>
         <a href="#">Contact</a>
         <a href="#">Support </a>
         <a href="#">Team </a>

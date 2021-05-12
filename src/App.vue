@@ -73,6 +73,7 @@ input:focus {
 .font-gobold {
   font-family: "Gobold High";
 }
+
 h1 {
   font-family: "Gobold High";
   font-style: normal;
@@ -165,7 +166,6 @@ body {
 // End General
 
 // Button Style
-
 .btn {
   font-family: "Source Sans Pro";
   font-style: normal;

@@ -33,7 +33,7 @@
         </svg>
       </router-link>
 
-      <a class="btn btn-secondary btn-lg" href="#">Tutorials</a>
+      <router-link to="/tutorial" class="btn btn-secondary btn-lg" href="#">Tutorials</router-link>
     </div>
     <div class="hero__image">
       <lottie-player
