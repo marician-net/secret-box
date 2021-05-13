@@ -1,11 +1,11 @@
 <template>
-   <div class="app">
+  <div class="app">
     <s-topbar />
     <s-navbar page="default" />
     <main class="main">
       <router-view />
     </main>
-    <s-footer :page="($route.path == '/') ? 'home' : ''" />
+    <s-footer :page="$route.path == '/' ? 'home' : ''" />
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
     STopbar,
     SNavbar,
     SFooter,
-  }
+  },
 };
 </script>
 
@@ -39,7 +39,7 @@ export default {
     margin-top: 80px;
   }
   @media (max-width: 250px) {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 </style>

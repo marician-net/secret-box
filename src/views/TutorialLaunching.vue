@@ -599,7 +599,7 @@ secretcli keys list
       this.$refs.copydata.setAttribute("type", "text");
       this.$refs.copydata.select();
       try {
-        var successful = document.execCommand("copy");
+        document.execCommand("copy");
         // var msg = successful ? 'successful' : 'unsuccessful';
         // alert('Code was copied ' + msg);
       } catch (err) {
