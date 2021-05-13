@@ -1,7 +1,9 @@
 <template>
+   <div>
     <home-hero />
     <home-about />
     <home-news />
+   </div>
 </template>
 
 <script>
