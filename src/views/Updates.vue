@@ -315,8 +315,7 @@ export default {
         id: 1,
         anchor: "Secret Agent",
         title: "“GripTape” Secret Box Launching",
-        desc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. placerat lorem ac et a libero iaculis pellentesque...",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. placerat lorem ac et a libero iaculis pellentesque...",
         date: "Mar 3",
         read_time: "8 min",
         link: "copythislink.com/share",
@@ -325,8 +324,7 @@ export default {
         id: 2,
         anchor: "Secret Agent",
         title: "“GripTape” Secret Box Launching",
-        desc:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. placerat lorem ac et a libero iaculis pellentesque...",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. placerat lorem ac et a libero iaculis pellentesque...",
         date: "Mar 3",
         read_time: "8 min",
         link: "copythislink.com/share",
@@ -339,7 +337,7 @@ export default {
       this.$refs.copydata.setAttribute("type", "text");
       this.$refs.copydata.select();
       try {
-        var successful = document.execCommand("copy");
+        // var successful = document.execCommand("copy");
         // var msg = successful ? 'successful' : 'unsuccessful';
         // alert('Code was copied ' + msg);
       } catch (err) {

@@ -1,9 +1,13 @@
 <template>
-  <nav :class="(page == 'docs') ? 'navbar docs-layout' : 'navbar default-layout'">
+  <nav :class="page == 'docs' ? 'navbar docs-layout' : 'navbar default-layout'">
     <router-link to="/" class="logo">
-      <img v-if="$store.state.darkMode" src="/Logo White.png" alt="Secret Box Logo" />
+      <img
+        v-if="$store.state.darkMode"
+        src="/Logo White.png"
+        alt="Secret Box Logo"
+      />
       <img v-else src="/Logo Black.png" alt="Secret Box Logo" />
-      <h4 v-if="page == 'docs'"> Secret Boxes Guide</h4>
+      <h4 v-if="page == 'docs'">Secret Boxes Guide</h4>
     </router-link>
     <div class="btn-menu" @click="toggleMenu = !toggleMenu">
       <svg
@@ -35,7 +39,7 @@
           width="32"
           height="32"
           viewBox="0 0 24 24"
-          fill="none"
+          fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -54,9 +58,11 @@
           />
         </svg>
       </li>
-      <li class="nav-dropdown" >
-        <div class="nav-dropdown-link"
-          @click="toggleDropdown = !toggleDropdown">
+      <li class="nav-dropdown">
+        <div
+          class="nav-dropdown-link"
+          @click="toggleDropdown = !toggleDropdown"
+        >
           <span>Boxes</span>
           <svg
             width="8"
@@ -95,7 +101,7 @@
           </li>
         </ul>
       </li>
-      <li >
+      <li>
         <router-link to="/docs">Docs</router-link>
       </li>
       <li>
@@ -107,12 +113,61 @@
       <li>
         <router-link to="/support">Support</router-link>
       </li>
-       <li @click="$store.commit('darkModeToggle')">
-       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8066 7.62361L20.1842 6.54352C19.6576 5.6296 18.4907 5.31432 17.5755 5.83872V5.83872C17.1399 6.09534 16.6201 6.16815 16.1307 6.04109C15.6413 5.91402 15.2226 5.59752 14.9668 5.16137C14.8023 4.88415 14.7139 4.56839 14.7105 4.24604V4.24604C14.7254 3.72922 14.5304 3.2284 14.17 2.85767C13.8096 2.48694 13.3145 2.27786 12.7975 2.27808H11.5435C11.0369 2.27807 10.5513 2.47991 10.194 2.83895C9.83666 3.19798 9.63714 3.68459 9.63958 4.19112V4.19112C9.62457 5.23693 8.77245 6.07681 7.72654 6.0767C7.40418 6.07336 7.08843 5.98494 6.8112 5.82041V5.82041C5.89603 5.29601 4.72908 5.61129 4.20251 6.52522L3.53432 7.62361C3.00838 8.53639 3.31937 9.70261 4.22997 10.2323V10.2323C4.82187 10.574 5.1865 11.2056 5.1865 11.8891C5.1865 12.5725 4.82187 13.2041 4.22997 13.5458V13.5458C3.32053 14.0719 3.0092 15.2353 3.53432 16.1454V16.1454L4.16589 17.2346C4.41262 17.6798 4.82657 18.0083 5.31616 18.1474C5.80575 18.2866 6.33061 18.2249 6.77459 17.976V17.976C7.21105 17.7213 7.73116 17.6516 8.21931 17.7822C8.70746 17.9128 9.12321 18.233 9.37413 18.6717C9.53867 18.9489 9.62708 19.2646 9.63043 19.587V19.587C9.63043 20.6435 10.4869 21.5 11.5435 21.5H12.7975C13.8505 21.5001 14.7055 20.6491 14.7105 19.5962V19.5962C14.7081 19.088 14.9088 18.6 15.2681 18.2407C15.6274 17.8814 16.1154 17.6807 16.6236 17.6831C16.9451 17.6917 17.2596 17.7798 17.5389 17.9394V17.9394C18.4517 18.4653 19.6179 18.1544 20.1476 17.2438V17.2438L20.8066 16.1454C21.0617 15.7075 21.1317 15.186 21.0012 14.6964C20.8706 14.2067 20.5502 13.7894 20.111 13.5367V13.5367C19.6717 13.284 19.3514 12.8666 19.2208 12.3769C19.0902 11.8873 19.1602 11.3658 19.4153 10.928C19.5812 10.6383 19.8213 10.3982 20.111 10.2323V10.2323C21.0161 9.70289 21.3264 8.54349 20.8066 7.63277V7.63277V7.62361Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="12.175" cy="11.8891" r="2.63616" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+      <li v-if="page == 'docs'">
+        <div class="form-control">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="7.84394"
+              cy="7.84442"
+              r="5.99237"
+              stroke="#200E32"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12.0117 12.3235L14.3611 14.6667"
+              stroke="#200E32"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
 
+          <input type="text" placeholder="Search .." />
+        </div>
+      </li>
+      <li @click="$store.commit('darkModeToggle')">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M20.8066 7.62361L20.1842 6.54352C19.6576 5.6296 18.4907 5.31432 17.5755 5.83872V5.83872C17.1399 6.09534 16.6201 6.16815 16.1307 6.04109C15.6413 5.91402 15.2226 5.59752 14.9668 5.16137C14.8023 4.88415 14.7139 4.56839 14.7105 4.24604V4.24604C14.7254 3.72922 14.5304 3.2284 14.17 2.85767C13.8096 2.48694 13.3145 2.27786 12.7975 2.27808H11.5435C11.0369 2.27807 10.5513 2.47991 10.194 2.83895C9.83666 3.19798 9.63714 3.68459 9.63958 4.19112V4.19112C9.62457 5.23693 8.77245 6.07681 7.72654 6.0767C7.40418 6.07336 7.08843 5.98494 6.8112 5.82041V5.82041C5.89603 5.29601 4.72908 5.61129 4.20251 6.52522L3.53432 7.62361C3.00838 8.53639 3.31937 9.70261 4.22997 10.2323V10.2323C4.82187 10.574 5.1865 11.2056 5.1865 11.8891C5.1865 12.5725 4.82187 13.2041 4.22997 13.5458V13.5458C3.32053 14.0719 3.0092 15.2353 3.53432 16.1454V16.1454L4.16589 17.2346C4.41262 17.6798 4.82657 18.0083 5.31616 18.1474C5.80575 18.2866 6.33061 18.2249 6.77459 17.976V17.976C7.21105 17.7213 7.73116 17.6516 8.21931 17.7822C8.70746 17.9128 9.12321 18.233 9.37413 18.6717C9.53867 18.9489 9.62708 19.2646 9.63043 19.587V19.587C9.63043 20.6435 10.4869 21.5 11.5435 21.5H12.7975C13.8505 21.5001 14.7055 20.6491 14.7105 19.5962V19.5962C14.7081 19.088 14.9088 18.6 15.2681 18.2407C15.6274 17.8814 16.1154 17.6807 16.6236 17.6831C16.9451 17.6917 17.2596 17.7798 17.5389 17.9394V17.9394C18.4517 18.4653 19.6179 18.1544 20.1476 17.2438V17.2438L20.8066 16.1454C21.0617 15.7075 21.1317 15.186 21.0012 14.6964C20.8706 14.2067 20.5502 13.7894 20.111 13.5367V13.5367C19.6717 13.284 19.3514 12.8666 19.2208 12.3769C19.0902 11.8873 19.1602 11.3658 19.4153 10.928C19.5812 10.6383 19.8213 10.3982 20.111 10.2323V10.2323C21.0161 9.70289 21.3264 8.54349 20.8066 7.63277V7.63277V7.62361Z"
+            stroke="#200E32"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <circle
+            cx="12.175"
+            cy="11.8891"
+            r="2.63616"
+            stroke="#200E32"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
       </li>
       <li class="navbar__social">
         <Social />
@@ -125,7 +180,7 @@
 import Social from "./common/Social.vue";
 
 export default {
-  props:['page'],
+  props: ["page"],
   components: {
     Social,
   },
@@ -140,33 +195,32 @@ export default {
       this.toggleMenu = false;
       this.toggleDropdown = false;
     },
-    to(link){
-      this.$router.push(link)
+    to(link) {
+      this.$router.push(link);
       this.toggleMenu = false;
       this.toggleDropdown = false;
-    }
+    },
   },
   watch: {
-    $route(to, from) {
+    $route() {
       this.resetToggle();
     },
   },
 };
 </script>
 
-
 <style lang="scss">
-.default-layout{
-     margin-top: 50px;
-      @media (max-width:1024px){
-            margin-top: 0;
-      }
- }
+.default-layout {
+  margin-top: 50px;
+  @media (max-width: 1024px) {
+    margin-top: 0;
+  }
+}
 .docs-layout .logo {
-      width:50%;
-      @media (max-width:1024px){
-        width: auto;
-      }
+  width: 50%;
+  @media (max-width: 1024px) {
+    width: auto;
+  }
 }
 .navbar {
   z-index: 1200;
@@ -197,9 +251,9 @@ export default {
   & .logo {
     display: flex;
     z-index: 1204;
-    & h4{
+    & h4 {
       padding: 16px;
-      @media (max-width:1024px){
+      @media (max-width: 1024px) {
         display: none;
       }
     }
@@ -211,7 +265,7 @@ export default {
     }
   }
   &__navbar-list {
-    width:100%;
+    width: 100%;
     left: 0;
     display: flex;
     list-style: none;
@@ -316,6 +370,28 @@ export default {
     }
     @media (max-width: 1024px) {
       margin-left: 0;
+    }
+  }
+
+  & .form-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    padding: 0 16px;
+    background: var(--theme-bg-light);
+    color: var(--theme-color);
+    & input {
+      width: 90%;
+      padding: 16px;
+      border-radius: 15px;
+      border: 0;
+      background: var(--theme-bg-light);
+      color: var(--theme-color);
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
