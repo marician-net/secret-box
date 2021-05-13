@@ -67,8 +67,8 @@
               <br />
             </div>
             <div class="action">
-              <a href="#" class="btn btn-sm btn-primary mr-3">Let’s Go!</a>
-              <a href="#" class="btn btn-sm btn-secondary mr-3">Docs</a>
+              <router-link to="/secret/counter" class="btn btn-sm btn-primary mr-3">Let’s Go!</router-link>
+              <router-link to="/docs" class="btn btn-sm btn-secondary mr-3">Docs</router-link>
               <a href="#" class="btn btn-sm btn-secondary">
                 <svg
                   width="16"
@@ -110,8 +110,8 @@
               <br />
             </div>
             <div class="action">
-              <a href="#" class="btn btn-sm btn-primary mr-3">Let’s Go!</a>
-              <a href="#" class="btn btn-sm btn-secondary">Docs</a>
+              <a target="_BLANK" href="https://learn.figment.io/network-documentation/secret/secret-pathway" class="btn btn-sm btn-primary mr-3">Let’s Go!</a>
+              <a target="_BLANK" href="https://learn.figment.io/network-documentation/secret/secret-101" class="btn btn-sm btn-secondary">Docs</a>
             </div>
           </div>
         </li>

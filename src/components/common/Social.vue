@@ -14,7 +14,7 @@
       />
     </svg>
   </a>
-  <a href="#" class="social-icon">
+  <a target="_BLANK" href="https://t.me/SCRTcommunity" class="social-icon">
     <svg
       width="30"
       height="30"
@@ -29,7 +29,7 @@
       />
     </svg>
   </a>
-  <a href="#" class="social-icon">
+  <a target="_BLANK" href="https://discord.com/invite/SJK32GY" class="social-icon">
     <svg
       width="30"
       height="30"
@@ -44,7 +44,7 @@
       />
     </svg>
   </a>
-  <a href="#" class="social-icon">
+  <a target="_BLANK" href="https://twitter.com/SecretNetwork" class="social-icon">
     <svg
       width="30"
       height="30"
@@ -59,7 +59,7 @@
       />
     </svg>
   </a>
-  <a href="#" class="social-icon">
+  <a target="_BLANK" href="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw" class="social-icon">
     <svg
       width="30"
       height="30"
