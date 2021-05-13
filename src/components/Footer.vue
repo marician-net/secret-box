@@ -1,6 +1,6 @@
 <template>
-  <section class="footer">
-    <div class="footer__form">
+  <footer class="footer-home" v-if="page == 'home'">
+    <div class="footer-home__form">
       <h5 class="title">Sign up for the Mailing List</h5>
       <p class="description">
         We don’t send these very often so you know if you get an email from us,
@@ -24,7 +24,7 @@
         </div>
       </form>
     </div>
-    <div class="footer__contact">
+    <div class="footer-home__contact">
       <a href="#" class="title"> <h3>CONTACT US</h3></a>
       <br />
       <a href="#" class="title"> <h3>TEAM</h3></a>
@@ -38,16 +38,107 @@
       <a href="#">support@secretboxes.io</a>
     </div>
 
-    <img src="/img/footer-il1.png" class="footer__il1" alt="Il1" />
-    <img src="/img/footer-il2.png" class="footer__il2" alt="Il2" />
-    <img src="/img/footer-il3.png" class="footer__il3" alt="Il3" />
-  </section>
+    <img src="/img/footer-il1.png" class="footer-home__il1" alt="Il1" />
+    <img src="/img/footer-il2.png" class="footer-home__il2" alt="Il2" />
+    <img src="/img/footer-il3.png" class="footer-home__il3" alt="Il3" />
+  </footer>
+
+  <footer class="footer-default">
+    <nav class="footer-bar">
+      <s-social />
+    </nav>
+    <nav class="footer-bar2">
+      <div class="left">
+        <a terget="_BLANK" href="http://secretchaingirl.foundation/"
+          >SCG Foundation</a
+        >
+        <a href="#">Contact</a>
+        <router-link to="/support">Support </router-link>
+        <a href="#">Team </a>
+        <a href="#">Privacy Policy </a>
+      </div>
+      <div class="right">
+        <a href="#">© 2021 SecretChainGirl Foundation</a>
+      </div>
+    </nav>
+  </footer>
 </template>
 
-
-
+<script>
+import SSocial from "../components/common/Social.vue";
+export default {
+  props: ["page"],
+  components: {
+    SSocial,
+  },
+};
+</script>
 <style lang="scss" scoped>
-.footer {
+.footer-default {
+  background: var(--theme-bg);
+  color: var(--theme-color);
+  position: relative;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .footer-index {
+    margin-top: -150px;
+  }
+  .footer-bar {
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--dark-1);
+    & a {
+      margin-right: 10px;
+    }
+    @media (max-width: 1024px) {
+      text-align: center;
+      border-bottom: none;
+      left: 0%;
+      width: 100%;
+      bottom: 100px;
+    }
+  }
+  .footer-bar2 {
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    bottom: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    & a {
+      margin-right: 10px;
+    }
+    & .right {
+      margin-left: auto;
+      & a {
+        color: white;
+      }
+    }
+    @media (max-width: 1024px) {
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+      bottom: 0;
+      & .left {
+        width: 100%;
+        margin-top: 0px;
+      }
+      & .right {
+        width: 100%;
+      }
+      left: 0%;
+      width: 100%;
+    }
+  }
+}
+
+.footer-home {
   position: relative;
   display: flex;
   flex-wrap: wrap;

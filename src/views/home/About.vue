@@ -150,11 +150,10 @@
 
 <style lang="scss" scoped>
 .about {
+  width: 100%;
   padding: 50px 10%;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  background: var(--grayscale);
   &__image{
     width: 264px; height: 174px;
     @media (max-width: 1024px) {

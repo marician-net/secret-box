@@ -376,11 +376,13 @@ export default {
   width: 100%;
   height: 200px;
   left: 0;
-  // overflow: hidden;
   @media (max-width: 1024px) {
     height: 300px;
     left: -50%;
     width: 200%;
+  }
+   @media (max-width: 720px) {
+    height: 500px;
   }
 }
 .container_news {
@@ -390,6 +392,9 @@ export default {
   @media (max-width: 1024px) {
     padding: 0 5%;
     padding-top: 350px;
+  }
+  @media (max-width: 720px) {
+    padding-top: 500px;
   }
   position: relative;
   display: flex;
@@ -406,6 +411,9 @@ export default {
       top: 200px;
       width: 80%;
     }
+    @media (max-width: 720px) {
+          top: 350px;
+   }
     & .form-control {
       display: flex;
       justify-content: center;

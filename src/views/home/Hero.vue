@@ -6,7 +6,7 @@
         The beautiful, fun and easy way to get started building Secret Apps.
       </p>
       <router-link class="btn btn-primary btn-lg btn-icon-hover"
-        to="/box-default"
+        to="/secret/boxes"
         >Start Unboxing
 
         <svg
@@ -73,7 +73,6 @@ export default {
       const el = this.$el.getElementsByClassName("next-to-about")[0];
       console.log(el);
       if (el) {
-        // Use el.scrollIntoView() to instantly scroll to the element
         el.scrollIntoView({ behavior: "smooth" });
       }
     },
@@ -82,13 +81,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .hero {
+  width: 100%;
   padding: 50px 10%;
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
-  min-height: 714px;
   background: var(--grayscale);
-
   &__text {
     width: 50%;
     display: flex;
@@ -108,17 +105,6 @@ export default {
       color: #091133;
     }
     & .description {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 32px;
-      /* or 133% */
-
-      letter-spacing: 0.15px;
-
-      /* Colour/Main/Blue/900 */
-
       color: #091133;
       margin-bottom: 20px;
       width: 100%;

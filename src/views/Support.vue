@@ -284,7 +284,7 @@
 </template>
 
 <script>
-import InputFile from "../components/common/InputFile.vue";
+import InputFile from "../components/forms/InputFile.vue";
 export default {
   name: "App",
   components: {

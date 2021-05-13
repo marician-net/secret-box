@@ -45,10 +45,10 @@
 <style lang="scss" scoped>
 
 .news {
+  width: 100%;
   padding: 50px 10%;
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
   background: var(--grayscale);
   & .title {
     padding: 30px 0;

@@ -404,7 +404,7 @@
           height: 280px;
           border-bottom-right-radius: 50px;
           display: block;
-          width: 400px;
+          width: 640px;
           border-right: 1px solid black;
           border-bottom: 1px solid black;
           content: "";
@@ -427,7 +427,7 @@
           height: 245px;
           border-top-left-radius: 50px;
           display: block;
-          width: 800px;
+          width: 640px;
           border-left: 1px solid black;
           border-top: 1px solid black;
           content: "";
@@ -440,7 +440,7 @@
           height: 205px;
           border-bottom-left-radius: 50px;
           display: block;
-          width: 800px;
+          width: 640px;
           border-left: 1px solid black;
           border-bottom: 1px solid black;
           content: "";
@@ -463,7 +463,7 @@
           height: 245px;
           border-top-right-radius: 50px;
           display: block;
-          width: 800px;
+          width: 640px;
           border-right: 1px solid black;
           border-top: 1px solid black;
           content: "";
@@ -476,7 +476,7 @@
           height: 205px;
           border-bottom-right-radius: 50px;
           display: block;
-          width: 400px;
+          width: 320px;
           border-right: 1px solid black;
           border-bottom: 1px solid black;
           content: "";

@@ -537,22 +537,22 @@ secretcli keys list
 .bg-launching {
   position: absolute;
   width: 100%;
+  height: auto;
   left: 0;
-  // overflow: hidden;
+  margin:0; 
   @media (max-width: 1024px) {
-    width: 200%;
-    left: -50%;
-  }
-  @media (max-width: 600px) {
-    width: 500%;
-    left: -250%;
+    height: 300px;
+    left: -10%;
+    width: auto;
   }
 }
 .container_tutorial_launch {
   width: 100%;
   padding: 0 25%;
+  padding-top: 280px;
   @media (max-width: 1024px) {
     padding: 0 5%;
+    padding-top: 350px;
   }
   position: relative;
   & .title {
@@ -563,13 +563,6 @@ secretcli keys list
     z-index: 10;
   }
   & .content {
-    margin-top: 40%;
-    @media (max-width:1024px){
-      margin-top:45%
-    }
-     @media (max-width:600px){
-      margin-top:110%
-    }
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.5px;
