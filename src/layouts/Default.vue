@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import STopbar from "../components/Topbar.vue";
-import SNavbar from "../components/Navbar.vue";
-import SFooter from "../components/Footer.vue";
+import STopbar from "../components/Topbar";
+import SNavbar from "../components/Navbar";
+import SFooter from "../components/Footer";
 export default {
   components: {
     STopbar,

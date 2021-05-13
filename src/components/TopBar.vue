@@ -6,9 +6,7 @@
 
 <script>
 import Social from "./common/Social.vue";
-
 export default {
-  name: "App",
   components: {
     Social,
   },
