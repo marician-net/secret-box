@@ -84,8 +84,12 @@
           Your local blockchain starts with a set of keys or accounts, named
         </p>
         <br />
-        <div class="editor-layout"
-        @click="modalCode = !modalCode; showDataCode = code2"
+        <div
+          class="editor-layout"
+          @click="
+            modalCode = !modalCode;
+            showDataCode = code2;
+          "
         >
           <prism-editor
             class="dark-editor height-300"
@@ -99,12 +103,30 @@
             Copy
           </button>
           <button class="btn-hover-editor">
-           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.5538 16.4821L9.36343 21.6724V18.8192H8V24H13.1808V22.6366H10.3275L15.5179 17.4461L14.5538 16.4821Z" fill="#FCFCFC"/>
-<path d="M18.8192 8V9.36343H21.6724L16.482 14.5539L17.4461 15.5179L22.6366 10.3275V13.1808H24V8H18.8192Z" fill="#FCFCFC"/>
-<rect x="0.5" y="0.5" width="31" height="31" rx="7.5" stroke="#FCFCFC"/>
-</svg>
-
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.5538 16.4821L9.36343 21.6724V18.8192H8V24H13.1808V22.6366H10.3275L15.5179 17.4461L14.5538 16.4821Z"
+                fill="#FCFCFC"
+              />
+              <path
+                d="M18.8192 8V9.36343H21.6724L16.482 14.5539L17.4461 15.5179L22.6366 10.3275V13.1808H24V8H18.8192Z"
+                fill="#FCFCFC"
+              />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="31"
+                height="31"
+                rx="7.5"
+                stroke="#FCFCFC"
+              />
+            </svg>
           </button>
         </div>
         <br />
@@ -162,8 +184,12 @@
         </p>
         <br />
         <br />
-        <div class="editor-layout"
-        @click="modalCode = !modalCode; showDataCode = code5"
+        <div
+          class="editor-layout"
+          @click="
+            modalCode = !modalCode;
+            showDataCode = code5;
+          "
         >
           <prism-editor
             class="dark-editor height-300"
@@ -177,13 +203,31 @@
             Copy
           </button>
           <button class="btn-hover-editor">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14.5538 16.4821L9.36343 21.6724V18.8192H8V24H13.1808V22.6366H10.3275L15.5179 17.4461L14.5538 16.4821Z" fill="#FCFCFC"/>
-      <path d="M18.8192 8V9.36343H21.6724L16.482 14.5539L17.4461 15.5179L22.6366 10.3275V13.1808H24V8H18.8192Z" fill="#FCFCFC"/>
-      <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" stroke="#FCFCFC"/>
-      </svg>
-
-                </button>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.5538 16.4821L9.36343 21.6724V18.8192H8V24H13.1808V22.6366H10.3275L15.5179 17.4461L14.5538 16.4821Z"
+                fill="#FCFCFC"
+              />
+              <path
+                d="M18.8192 8V9.36343H21.6724L16.482 14.5539L17.4461 15.5179L22.6366 10.3275V13.1808H24V8H18.8192Z"
+                fill="#FCFCFC"
+              />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="31"
+                height="31"
+                rx="7.5"
+                stroke="#FCFCFC"
+              />
+            </svg>
+          </button>
         </div>
         <br />
         <br />
@@ -227,8 +271,12 @@
         </p>
         <br />
 
-        <div class="editor-layout"
-        @click="modalCode = !modalCode; showDataCode = code8"
+        <div
+          class="editor-layout"
+          @click="
+            modalCode = !modalCode;
+            showDataCode = code8;
+          "
         >
           <prism-editor
             class="dark-editor height-300"
@@ -242,13 +290,31 @@
             Copy
           </button>
           <button class="btn-hover-editor">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14.5538 16.4821L9.36343 21.6724V18.8192H8V24H13.1808V22.6366H10.3275L15.5179 17.4461L14.5538 16.4821Z" fill="#FCFCFC"/>
-          <path d="M18.8192 8V9.36343H21.6724L16.482 14.5539L17.4461 15.5179L22.6366 10.3275V13.1808H24V8H18.8192Z" fill="#FCFCFC"/>
-          <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" stroke="#FCFCFC"/>
-          </svg>
-
-                    </button>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.5538 16.4821L9.36343 21.6724V18.8192H8V24H13.1808V22.6366H10.3275L15.5179 17.4461L14.5538 16.4821Z"
+                fill="#FCFCFC"
+              />
+              <path
+                d="M18.8192 8V9.36343H21.6724L16.482 14.5539L17.4461 15.5179L22.6366 10.3275V13.1808H24V8H18.8192Z"
+                fill="#FCFCFC"
+              />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="31"
+                height="31"
+                rx="7.5"
+                stroke="#FCFCFC"
+              />
+            </svg>
+          </button>
         </div>
 
         <br />
@@ -290,30 +356,52 @@
     </div>
     <input type="hidden" ref="copydata" value="" />
 
-
     <div class="modal" v-if="modalCode">
       <div class="modal-close" @click="modalCode = !modalCode"></div>
       <div class="modal-body">
-          <prism-editor
-            class="dark-editor modal-editor height-300"
-            v-model="code8"
-            :highlight="highlighter"
-            :line-numbers="lineNumbers"
-            :readonly="true"
-          >
-          </prism-editor>
+        <prism-editor
+          class="dark-editor modal-editor height-300"
+          v-model="code8"
+          :highlight="highlighter"
+          :line-numbers="lineNumbers"
+          :readonly="true"
+        >
+        </prism-editor>
       </div>
-         <button class="btn-download btn btn-secondary" @click="modalCode = !modalCode">
-            Download
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.08146 10.2908L8.08146 2.26343" stroke="#4E4B66" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.0255 8.33887L8.08151 10.2909L6.13751 8.33887" stroke="#4E4B66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.17 5.4187H11.792C13.1487 5.4187 14.248 6.51803 14.248 7.87537L14.248 11.1314C14.248 12.4847 13.1514 13.5814 11.798 13.5814L4.37138 13.5814C3.01471 13.5814 1.91471 12.4814 1.91471 11.1247L1.91471 7.86803C1.91471 6.51537 3.01205 5.4187 4.36471 5.4187H4.99271" stroke="#4E4B66" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-          </button>
+      <button
+        class="btn-download btn btn-secondary"
+        @click="modalCode = !modalCode"
+      >
+        Download
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.08146 10.2908L8.08146 2.26343"
+            stroke="#4E4B66"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10.0255 8.33887L8.08151 10.2909L6.13751 8.33887"
+            stroke="#4E4B66"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.17 5.4187H11.792C13.1487 5.4187 14.248 6.51803 14.248 7.87537L14.248 11.1314C14.248 12.4847 13.1514 13.5814 11.798 13.5814L4.37138 13.5814C3.01471 13.5814 1.91471 12.4814 1.91471 11.1247L1.91471 7.86803C1.91471 6.51537 3.01205 5.4187 4.36471 5.4187H4.99271"
+            stroke="#4E4B66"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
     </div>
-
   </section>
 </template>
 
@@ -539,7 +627,7 @@ secretcli keys list
   width: 100%;
   height: auto;
   left: 0;
-  margin:0; 
+  margin: 0;
   @media (max-width: 1024px) {
     height: 300px;
     left: -10%;
@@ -621,7 +709,7 @@ secretcli keys list
   position: relative;
   & .btn-copy {
     margin-top: 10px;
-    @media (min-width:1024px){
+    @media (min-width: 1024px) {
       position: absolute;
       right: 10px;
       top: 10px;
@@ -646,7 +734,6 @@ secretcli keys list
   align-items: center;
   z-index: 1300;
 }
-
 
 .modal-close {
   position: fixed;
@@ -680,33 +767,32 @@ secretcli keys list
   }
 }
 
-.modal-editor{
+.modal-editor {
   border-radius: 15px;
   width: 100%;
   height: 100%;
-
 }
-.btn-download{
-    position: absolute;
-    left: 15%;
-    bottom:14%;
-    z-index: 1304;
-     @media (max-width: 1024px) {
-          left: 5%;
-    }
+.btn-download {
+  position: absolute;
+  left: 15%;
+  bottom: 14%;
+  z-index: 1304;
+  @media (max-width: 1024px) {
+    left: 5%;
+  }
 }
-.btn-hover-editor{
+.btn-hover-editor {
   display: none;
 }
-.editor-layout:hover{
-   background: rgba(100, 100, 100, 0.75);
-   backdrop-filter: blur(11px);
+.editor-layout:hover {
+  background: rgba(100, 100, 100, 0.75);
+  backdrop-filter: blur(11px);
 }
-.editor-layout:hover .btn-hover-editor{
+.editor-layout:hover .btn-hover-editor {
   display: block;
   position: absolute;
-  top:45%;
-  left:45%;
+  top: 45%;
+  left: 45%;
   background: var(--background);
   cursor: pointer;
 }
