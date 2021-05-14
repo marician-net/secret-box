@@ -82,11 +82,11 @@
             <img src="/img/box-gray.png" alt="Secret Counter" />
             <h4>Secret Counter</h4>
           </li>
-          <li>
+          <li @click="scrollTo('about-section')">
             <img src="/img/box-blue.png" alt="Figment learn" />
             <h4>Figment learn</h4>
           </li>
-          <li>
+          <li @click="scrollTo('about-section')">
             <img src="/img/box-orange.png" alt="Richie Rich" />
             <h4>Richie Rich</h4>
           </li>
@@ -191,6 +191,11 @@ export default {
       this.toggleMenu = false;
       this.toggleDropdown = false;
     },
+    scrollTo(el){
+      this.toggleMenu = false;
+      this.toggleDropdown = false;
+      this.$emit("scrollTo",el)
+    }
   },
   watch: {
     $route() {

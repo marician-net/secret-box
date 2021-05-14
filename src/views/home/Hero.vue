@@ -48,7 +48,7 @@
         autoplay
       ></lottie-player>
     </div>
-    <div class="hero__arrow-bottom" @click="scrollToElement">
+    <div class="hero__arrow-bottom" @click="$emit('scrollTo', 'about-section')">
       <svg
         width="40"
         height="40"
@@ -65,23 +65,8 @@
         />
       </svg>
     </div>
-    <div class="next-to-about"></div>
   </section>
 </template>
-
-<script>
-export default {
-  methods: {
-    scrollToElement() {
-      const el = this.$el.getElementsByClassName("next-to-about")[0];
-      console.log(el);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    },
-  },
-};
-</script>
 <style lang="scss" scoped>
 .hero {
   width: 100%;

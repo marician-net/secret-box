@@ -1,9 +1,9 @@
 <template>
   <div class="app">
     <s-topbar />
-    <s-navbar page="default" />
+    <s-navbar page="default" v-on:scrollTo="scrollToElement" />
     <main class="main">
-      <router-view />
+      <router-view v-on:setScrollTo="setScrollTo" :scrollToData="scrollToData" />
     </main>
     <s-footer :page="$route.path == '/' ? 'home' : ''" />
   </div>
@@ -14,11 +14,24 @@ import STopbar from "../components/Topbar";
 import SNavbar from "../components/Navbar";
 import SFooter from "../components/Footer";
 export default {
+  data(){
+    return {
+      scrollToData : ''
+    }
+  },
   components: {
     STopbar,
     SNavbar,
     SFooter,
   },
+  methods:{
+    setScrollTo(data){
+      this.scrollToData = data
+    },
+    scrollToElement(el){
+      this.scrollToData = el
+    }
+  }
 };
 </script>
 
