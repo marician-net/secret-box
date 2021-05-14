@@ -1,5 +1,3 @@
 <template>
-    <div>
-        Default & Small
-    </div>
+  <div>Default & Small</div>
 </template>

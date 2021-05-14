@@ -1,10 +1,10 @@
 <template>
-   <div class="app">
+  <div class="app">
     <s-navbar page="docs" />
     <main class="main">
       <router-view />
     </main>
-    <s-footer :page="($route.path == '/') ? 'home' : ''" />
+    <s-footer :page="$route.path == '/' ? 'home' : ''" />
   </div>
 </template>
 
@@ -15,12 +15,11 @@ export default {
   components: {
     SNavbar,
     SFooter,
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
 .app {
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +32,7 @@ export default {
   width: 100%;
   font-size: 1rem;
   @media (max-width: 250px) {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 </style>

@@ -5,7 +5,8 @@
       <p class="description">
         The beautiful, fun and easy way to get started building Secret Apps.
       </p>
-      <router-link class="btn btn-primary btn-lg btn-icon-hover"
+      <router-link
+        class="btn btn-primary btn-lg btn-icon-hover"
         to="/secret/boxes"
         >Start Unboxing
 
@@ -33,7 +34,9 @@
         </svg>
       </router-link>
 
-      <router-link to="/tutorial" class="btn btn-secondary btn-lg" href="#">Tutorials</router-link>
+      <router-link to="/tutorial" class="btn btn-secondary btn-lg" href="#"
+        >Tutorials</router-link
+      >
     </div>
     <div class="hero__image">
       <lottie-player

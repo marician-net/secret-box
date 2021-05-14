@@ -1,20 +1,20 @@
 <template>
-   <div>
+  <div>
     <home-hero />
     <home-about />
     <home-news />
-   </div>
+  </div>
 </template>
 
 <script>
-import HomeHero from './home/Hero.vue'
-import HomeAbout from './home/About.vue'
-import HomeNews from './home/News.vue'
+import HomeHero from "./home/Hero.vue";
+import HomeAbout from "./home/About.vue";
+import HomeNews from "./home/News.vue";
 export default {
   components: {
     HomeHero,
     HomeAbout,
-    HomeNews
-  }
-}
+    HomeNews,
+  },
+};
 </script>

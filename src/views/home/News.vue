@@ -43,7 +43,6 @@
 </template>
 
 <style lang="scss" scoped>
-
 .news {
   width: 100%;
   padding: 50px 10%;
@@ -138,14 +137,14 @@
       color: white;
       position: absolute;
       display: inline-block;
-      @media (max-width:1024px){
+      @media (max-width: 1024px) {
         bottom: 30%;
-        left:0
+        left: 0;
       }
     }
     & .rectangle:hover .title,
-    .square:hover .title{
-      @media (max-width:1024px){
+    .square:hover .title {
+      @media (max-width: 1024px) {
         bottom: 35%;
       }
     }

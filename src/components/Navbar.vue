@@ -64,20 +64,11 @@
           @click="toggleDropdown = !toggleDropdown"
         >
           <span>Boxes</span>
-          <svg
-            width="8"
-            height="7"
-            viewBox="0 0 18 10"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1 1L9 9L17 1"
-              stroke="#111111"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+          <svg v-if="!toggleDropdown" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L9 9L17 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg v-else width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 8.5L8 1.5L15 8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
         <ul
@@ -114,7 +105,7 @@
         <router-link to="/support">Support</router-link>
       </li>
       <li v-if="page == 'docs'">
-        <div class="form-control">
+        <div class="search-form">
           <svg
             width="16"
             height="16"
@@ -210,18 +201,6 @@ export default {
 </script>
 
 <style lang="scss">
-.default-layout {
-  margin-top: 50px;
-  @media (max-width: 1024px) {
-    margin-top: 0;
-  }
-}
-.docs-layout .logo {
-  width: 50%;
-  @media (max-width: 1024px) {
-    width: auto;
-  }
-}
 .navbar {
   z-index: 1200;
   padding: 0 10%;
@@ -338,11 +317,17 @@ export default {
     & span {
       padding-right: 10px;
     }
+    & .nav-dropdown-link{
+      &:hover {
+        border-bottom: 2px solid var(--primary);
+      }
+    }
   }
   & .navbar-dropdown {
     display: none;
     position: absolute;
-    background: var(--theme-bg);
+    background: white;
+    color: var(--background);
     list-style: none;
     margin-left: -50%;
     width: 300px;
@@ -373,26 +358,52 @@ export default {
     }
   }
 
-  & .form-control {
+  & .search-form {
     display: flex;
     justify-content: center;
     align-items: center;
     background: white;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0 16px;
-    background: var(--theme-bg-light);
-    color: var(--theme-color);
+    background: white;
     & input {
       width: 90%;
       padding: 16px;
-      border-radius: 15px;
+      border-radius: 10px;
       border: 0;
-      background: var(--theme-bg-light);
-      color: var(--theme-color);
       &:focus {
         outline: none;
       }
     }
+  }
+}
+
+
+
+.default-layout {
+  margin-top: 50px;
+  @media (max-width: 1024px) {
+    margin-top: 0;
+  }
+}
+.docs-layout .logo {
+  width: 35%;
+  @media (max-width:1552px){
+    width:50%
+  }
+   @media (max-width: 1024px) {
+    width: auto;
+  }
+  @media (max-width:1282px){
+    width: 20%;
+    h4{
+      display: none;
+    }
+  }
+}
+.docs-layout .search-form {
+  @media (max-width:1552px){
+    display: none;
   }
 }
 </style>

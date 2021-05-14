@@ -1,4 +1,3 @@
-
 <template>
   <section class="container_tutorial">
     <div class="tutorial">
