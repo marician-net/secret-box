@@ -9,8 +9,10 @@
           src="/img/docs-illustration/il1-home.svg"
           alt="il 1"
         />
+       <div class="content">
         <h6>Start Here</h6>
         <p>Steps to make you awesome.</p>
+       </div>
       </div>
       <div class="card">
         <img
@@ -18,8 +20,10 @@
           src="/img/docs-illustration/il2-home.svg"
           alt="il 2"
         />
+       <div class="content">
         <h6>Essentials</h6>
         <p>Learn how we use the blockchain.</p>
+       </div>
       </div>
       <div class="card">
         <img
@@ -27,8 +31,10 @@
           src="/img/docs-illustration/il3-home.svg"
           alt="il 3"
         />
-        <h6>Boxes</h6>
-        <p>Awesome kits for developers.</p>
+       <div class="content">
+          <h6>Boxes</h6>
+          <p>Awesome kits for developers.</p>
+       </div>
       </div>
       <div class="card">
         <img
@@ -36,8 +42,10 @@
           src="/img/docs-illustration/il4-home.svg"
           alt="il 4"
         />
+       <div class="content">
         <h6>Lorem Ipsum</h6>
         <p>Awesome kits for developers.</p>
+       </div>
       </div>
     </div>
     <div class="news-letter-card">
@@ -45,7 +53,6 @@
       <h3>Developer NewsLetter</h3>
       <br />
       <p>Subscribe to the latest News or Updates on Secret Network</p>
-
       <div class="form-group">
         <input placeholder="grayman.foo.com" type="text" class="form-control" />
         <button class="btn btn-secondary">Subscribe</button>
@@ -111,29 +118,44 @@
   margin: 30px 0;
   & .card {
     width: 30%;
+    height: 300px;
     margin: 1%;
     padding: 16px;
     background: var(--primary);
     color: var(--background);
     border-radius: 15px;
+    position: relative;
     @media (max-width: 1024px) {
       width: 100%;
       margin: 0;
       margin-bottom: 30px;
+    }
+    & img{
+      position: absolute;
+      height: 65%;
+      right: 0;
+    }
+    & .content{
+      position: absolute;
+      bottom: 5%;
+      width: 50%;
+    }
+    &:hover{
+      background: var(--primary-light);
     }
   }
 }
 .news-letter-card {
   display: flex;
   flex-wrap: wrap;
-  margin: 30px 0;
-  padding: 50px 16px;
   border-radius: 15px;
   background: var(--theme-bg-light-2);
   text-align: center;
-  width: 100%;
   justify-content: center;
+  align-content: center;
   position: relative;
+  height: 400px;
+  width: 100%;
   & h3 {
     width: 100%;
     margin: 16px 0;
@@ -141,8 +163,10 @@
   & img {
     width: 100%;
     position: absolute;
+    z-index: 1
   }
   & .form-group {
+    z-index: 2;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -162,10 +186,14 @@
   text-align: center;
   margin: 30px 0;
   & .card {
-    width: 30%;
-    margin: 1%;
+    width: 33%;
     padding: 16px;
     border-radius: 15px;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     & svg {
       width: 100%;
       padding: 16px;

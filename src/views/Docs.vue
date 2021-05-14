@@ -5,8 +5,25 @@
         <li v-for="menu in listMenu" :key="menu.id">
           <h6 @click="subListMenuActive(menu.id)">
             <router-link :to="menu.link"
-              ><s-icon :name="menu.icon" /> {{ menu.name }}</router-link
-            >
+              ><s-icon :name="menu.icon" /> {{ menu.name }}
+              <svg
+                class="arrow-icon"
+                v-if="menu.sub"
+                width="8"
+                height="12"
+                viewBox="0 0 8 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.66602 1.33341L6.33268 6.00008L1.66602 10.6667"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </router-link>
           </h6>
           <ul class="list-menu" v-if="menu.sub">
             <li
@@ -20,9 +37,25 @@
             >
               <h6 @click="subListMenuActive(submenu.id)">
                 <router-link :to="submenu.link"
-                  ><s-icon :name="submenu.icon" />
-                  {{ submenu.name }}</router-link
-                >
+                  ><s-icon :name="submenu.icon" /> {{ submenu.name }}
+                  <svg
+                    class="arrow-icon"
+                    v-if="submenu.sub"
+                    width="8"
+                    height="12"
+                    viewBox="0 0 8 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.66602 1.33341L6.33268 6.00008L1.66602 10.6667"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </router-link>
               </h6>
               <ul class="list-menu" v-if="submenu.sub">
                 <li
@@ -134,13 +167,11 @@ export default {
           sub: [
             {
               id: 10,
-              icon: "rocket",
               name: "Submenu",
               link: "#",
               sub: [
                 {
                   id: 11,
-                  icon: "rocket",
                   name: "Submenu 1",
                   link: "/docs/getting-started",
                 },
@@ -148,7 +179,6 @@ export default {
             },
             {
               id: 12,
-              icon: "rocket",
               name: "Submenu",
               link: "/docs/getting-started",
             },
@@ -255,6 +285,9 @@ export default {
         &:hover {
           color: var(--primary);
           background: var(--theme-bg-light-2);
+        }
+        & .arrow-icon {
+          margin-left: 15px;
         }
       }
     }
