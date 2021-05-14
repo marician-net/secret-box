@@ -119,7 +119,7 @@ export default {
   @media (max-width: 1024px) {
     width: 100%;
   }
-  & ul{
+  & ul {
     width: 100%;
     list-style: none;
     padding: 10px 10%;

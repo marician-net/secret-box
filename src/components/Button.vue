@@ -1,32 +1,32 @@
 <template>
-    <button :class="ClassName">
-      {{ text }}
-    </button>
+  <button :class="ClassName">
+    {{ text }}
+  </button>
 </template>
 <script>
 export default {
-    props: {
-      text: String,
-      primary: String,
-      primaryYellow: String,
-      secondary: String,
-      link: String,
-    },
-    data(){
-      return {
-        ClassName: ''
-      }
-    },
-    created(){
-      this.ClassName = 'btn btn-primary'
-    }
-}
+  props: {
+    text: String,
+    primary: String,
+    primaryYellow: String,
+    secondary: String,
+    link: String,
+  },
+  data() {
+    return {
+      ClassName: "",
+    };
+  },
+  created() {
+    this.ClassName = "btn btn-primary";
+  },
+};
 </script>
 <style lang="scss" scoped>
 button {
   border: none;
 }
-button:focus{
+button:focus {
   outline: none;
 }
 .btn {
@@ -65,7 +65,7 @@ button:focus{
 }
 
 .btn-link {
-  padding:8px;
+  padding: 8px;
   background: #fcfcfc;
   border-radius: 8px;
 }

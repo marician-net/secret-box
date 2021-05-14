@@ -3,7 +3,11 @@
     <ul class="list-menu">
       <li v-for="i in 10" :key="i">
         <h6 @click="subListMenuActive(i)">Lorem ipsum {{ i }}</h6>
-        <ul :class="(menuActive.includes(i))? 'sub-list-menu active' : 'sub-list-menu'">
+        <ul
+          :class="
+            menuActive.includes(i) ? 'sub-list-menu active' : 'sub-list-menu'
+          "
+        >
           <li>
             <h6>
               <svg
@@ -49,28 +53,77 @@
         </ul>
       </li>
       <li>
-        <h6 style="display:flex">
-          <span >FAQ </span>
-            <svg style="margin-left:10px" width="20" height="20" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.7161 14.7234H5.49609" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M12.7161 10.5369H5.49609" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M8.25109 6.36011H5.49609" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9085 1.24976C12.9085 1.24976 5.23149 1.25376 5.21949 1.25376C2.45949 1.27076 0.750488 3.08676 0.750488 5.85676V15.0528C0.750488 17.8368 2.47249 19.6598 5.25649 19.6598C5.25649 19.6598 12.9325 19.6568 12.9455 19.6568C15.7055 19.6398 17.4155 17.8228 17.4155 15.0528V5.85676C17.4155 3.07276 15.6925 1.24976 12.9085 1.24976Z" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <h6 style="display: flex">
+          <span>FAQ </span>
+          <svg
+            style="margin-left: 10px"
+            width="20"
+            height="20"
+            viewBox="0 0 19 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.7161 14.7234H5.49609"
+              stroke="#200E32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12.7161 10.5369H5.49609"
+              stroke="#200E32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8.25109 6.36011H5.49609"
+              stroke="#200E32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.9085 1.24976C12.9085 1.24976 5.23149 1.25376 5.21949 1.25376C2.45949 1.27076 0.750488 3.08676 0.750488 5.85676V15.0528C0.750488 17.8368 2.47249 19.6598 5.25649 19.6598C5.25649 19.6598 12.9325 19.6568 12.9455 19.6568C15.7055 19.6398 17.4155 17.8228 17.4155 15.0528V5.85676C17.4155 3.07276 15.6925 1.24976 12.9085 1.24976Z"
+              stroke="#200E32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </h6>
       </li>
       <li>
         <h6>
           <div class="form-group">
-              <span>
-             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="7.84442" cy="7.84442" r="5.99237" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12.0122 12.3235L14.3616 14.6667" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-
-              </span>
-            <input type="text"  placeholder="Search">
+            <span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="7.84442"
+                  cy="7.84442"
+                  r="5.99237"
+                  stroke="#200E32"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.0122 12.3235L14.3616 14.6667"
+                  stroke="#200E32"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <input type="text" placeholder="Search" />
           </div>
         </h6>
       </li>
@@ -115,87 +168,96 @@
         <br />
         <code> npm install - feugiat in </code>
       </li>
-      <li >
-          <div class="text">
-            <h6 class="title">Lorem ipsum dolor</h6>
-            <br />
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              urna, tristique ligula morbi at. Dolor, sit sed aliquet fringilla
-              suspendisse consequat nunc. Dis quis a vulputate purus duis a
-              adipiscing tempus amet. Aliquet habitasse lectus condimentum
-              ornare eget viverra dolor turpis. Vitae auctor tempor turpis amet
-              aliquam consequat neque, id. Enim, nec pellentesque sit est
-              quisque neque. Augue ipsum, turpis non dolor. Molestie risus sit
-              viverra nunc tellus. Vel dui integer morbi rhoncus non in. Eu
-              blandit molestie lorem aenean nibh.
-            </p>
-            <br />
-          </div>
-<div class="image">
-          <img src="/img/ufo-5.png" alt="Lorem">
-
-</div>
+      <li>
+        <div class="text">
+          <h6 class="title">Lorem ipsum dolor</h6>
+          <br />
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            urna, tristique ligula morbi at. Dolor, sit sed aliquet fringilla
+            suspendisse consequat nunc. Dis quis a vulputate purus duis a
+            adipiscing tempus amet. Aliquet habitasse lectus condimentum ornare
+            eget viverra dolor turpis. Vitae auctor tempor turpis amet aliquam
+            consequat neque, id. Enim, nec pellentesque sit est quisque neque.
+            Augue ipsum, turpis non dolor. Molestie risus sit viverra nunc
+            tellus. Vel dui integer morbi rhoncus non in. Eu blandit molestie
+            lorem aenean nibh.
+          </p>
+          <br />
+        </div>
+        <div class="image">
+          <img src="/img/ufo-5.png" alt="Lorem" />
+        </div>
       </li>
-      <li >
-          <div class="text">
-            <h6 class="title">Lorem ipsum dolor</h6>
-            <br />
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              urna, tristique ligula morbi at. Dolor, sit sed aliquet fringilla
-              suspendisse consequat nunc. Dis quis a vulputate purus duis a
-              adipiscing tempus amet. Aliquet habitasse lectus condimentum
-              ornare eget viverra dolor turpis. Vitae auctor tempor turpis amet
-              aliquam consequat neque, id. Enim, nec pellentesque sit est
-              quisque neque. Augue ipsum, turpis non dolor. Molestie risus sit
-              viverra nunc tellus. Vel dui integer morbi rhoncus non in. Eu
-              blandit molestie lorem aenean nibh.
-            </p>
-            <br />
-          </div>
-         <div class="image">
-            <img src="/img/ufo-5.png" alt="Lorem">
-         </div>
-
+      <li>
+        <div class="text">
+          <h6 class="title">Lorem ipsum dolor</h6>
+          <br />
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            urna, tristique ligula morbi at. Dolor, sit sed aliquet fringilla
+            suspendisse consequat nunc. Dis quis a vulputate purus duis a
+            adipiscing tempus amet. Aliquet habitasse lectus condimentum ornare
+            eget viverra dolor turpis. Vitae auctor tempor turpis amet aliquam
+            consequat neque, id. Enim, nec pellentesque sit est quisque neque.
+            Augue ipsum, turpis non dolor. Molestie risus sit viverra nunc
+            tellus. Vel dui integer morbi rhoncus non in. Eu blandit molestie
+            lorem aenean nibh.
+          </p>
+          <br />
+        </div>
+        <div class="image">
+          <img src="/img/ufo-5.png" alt="Lorem" />
+        </div>
       </li>
-      <li >
-          <div class="text">
-            <h6 class="title">Lorem ipsum dolor</h6>
-            <br />
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              urna, tristique ligula morbi at. Dolor, sit sed aliquet fringilla
-              suspendisse consequat nunc. Dis quis a vulputate purus duis a
-              adipiscing tempus amet. Aliquet habitasse lectus condimentum
-              ornare eget viverra dolor turpis. Vitae auctor tempor turpis amet
-              aliquam consequat neque, id. Enim, nec pellentesque sit est
-              quisque neque. Augue ipsum, turpis non dolor. Molestie risus sit
-              viverra nunc tellus. Vel dui integer morbi rhoncus non in. Eu
-              blandit molestie lorem aenean nibh.
-            </p>
-            <br />
-          </div>
+      <li>
+        <div class="text">
+          <h6 class="title">Lorem ipsum dolor</h6>
+          <br />
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            urna, tristique ligula morbi at. Dolor, sit sed aliquet fringilla
+            suspendisse consequat nunc. Dis quis a vulputate purus duis a
+            adipiscing tempus amet. Aliquet habitasse lectus condimentum ornare
+            eget viverra dolor turpis. Vitae auctor tempor turpis amet aliquam
+            consequat neque, id. Enim, nec pellentesque sit est quisque neque.
+            Augue ipsum, turpis non dolor. Molestie risus sit viverra nunc
+            tellus. Vel dui integer morbi rhoncus non in. Eu blandit molestie
+            lorem aenean nibh.
+          </p>
+          <br />
+        </div>
 
-          <div class="github-star">
-            <div class="star">
-              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="github-star">
+          <div class="star">
+            <svg
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <g clip-path="url(#clip0)">
-              <path d="M8 0.150024C3.58267 0.150024 0 3.73202 0 8.15002C0 11.6847 2.292 14.6834 5.47133 15.7414C5.87067 15.8154 6 15.5674 6 15.3567V13.8674C3.77467 14.3514 3.31133 12.9234 3.31133 12.9234C2.94733 11.9987 2.42267 11.7527 2.42267 11.7527C1.69667 11.256 2.478 11.2667 2.478 11.2667C3.28133 11.3227 3.704 12.0914 3.704 12.0914C4.41733 13.314 5.57533 12.9607 6.032 12.756C6.10333 12.2394 6.31067 11.886 6.54 11.6867C4.76333 11.4834 2.89533 10.7974 2.89533 7.73269C2.89533 6.85869 3.208 6.14536 3.71933 5.58536C3.63667 5.38336 3.36267 4.56936 3.79733 3.46802C3.79733 3.46802 4.46933 3.25336 5.998 4.28802C6.636 4.11069 7.32 4.02202 8 4.01869C8.68 4.02202 9.36467 4.11069 10.004 4.28802C11.5313 3.25336 12.202 3.46802 12.202 3.46802C12.6373 4.57002 12.3633 5.38402 12.2807 5.58536C12.794 6.14536 13.104 6.85936 13.104 7.73269C13.104 10.8054 11.2327 11.482 9.45133 11.68C9.738 11.928 10 12.4147 10 13.1614V15.3567C10 15.5694 10.128 15.8194 10.534 15.7407C13.7107 14.6814 16 11.6834 16 8.15002C16 3.73202 12.418 0.150024 8 0.150024Z" fill="black"/>
+                <path
+                  d="M8 0.150024C3.58267 0.150024 0 3.73202 0 8.15002C0 11.6847 2.292 14.6834 5.47133 15.7414C5.87067 15.8154 6 15.5674 6 15.3567V13.8674C3.77467 14.3514 3.31133 12.9234 3.31133 12.9234C2.94733 11.9987 2.42267 11.7527 2.42267 11.7527C1.69667 11.256 2.478 11.2667 2.478 11.2667C3.28133 11.3227 3.704 12.0914 3.704 12.0914C4.41733 13.314 5.57533 12.9607 6.032 12.756C6.10333 12.2394 6.31067 11.886 6.54 11.6867C4.76333 11.4834 2.89533 10.7974 2.89533 7.73269C2.89533 6.85869 3.208 6.14536 3.71933 5.58536C3.63667 5.38336 3.36267 4.56936 3.79733 3.46802C3.79733 3.46802 4.46933 3.25336 5.998 4.28802C6.636 4.11069 7.32 4.02202 8 4.01869C8.68 4.02202 9.36467 4.11069 10.004 4.28802C11.5313 3.25336 12.202 3.46802 12.202 3.46802C12.6373 4.57002 12.3633 5.38402 12.2807 5.58536C12.794 6.14536 13.104 6.85936 13.104 7.73269C13.104 10.8054 11.2327 11.482 9.45133 11.68C9.738 11.928 10 12.4147 10 13.1614V15.3567C10 15.5694 10.128 15.8194 10.534 15.7407C13.7107 14.6814 16 11.6834 16 8.15002C16 3.73202 12.418 0.150024 8 0.150024Z"
+                  fill="black"
+                />
               </g>
               <defs>
-              <clipPath id="clip0">
-              <rect width="16" height="16" fill="white" transform="translate(0 0.150024)"/>
-              </clipPath>
+                <clipPath id="clip0">
+                  <rect
+                    width="16"
+                    height="16"
+                    fill="white"
+                    transform="translate(0 0.150024)"
+                  />
+                </clipPath>
               </defs>
-              </svg>
-              <span>Star</span>
-            </div>
-            <div class="total">
-                  4,000
-            </div>
+            </svg>
+            <span>Star</span>
           </div>
-
+          <div class="total">4,000</div>
+        </div>
       </li>
       <li class="right-to-left">
         <div class="image">
@@ -244,23 +306,35 @@
         </div>
 
         <div class="github-star">
-            <div class="star">
-              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="star">
+            <svg
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <g clip-path="url(#clip0)">
-              <path d="M8 0.150024C3.58267 0.150024 0 3.73202 0 8.15002C0 11.6847 2.292 14.6834 5.47133 15.7414C5.87067 15.8154 6 15.5674 6 15.3567V13.8674C3.77467 14.3514 3.31133 12.9234 3.31133 12.9234C2.94733 11.9987 2.42267 11.7527 2.42267 11.7527C1.69667 11.256 2.478 11.2667 2.478 11.2667C3.28133 11.3227 3.704 12.0914 3.704 12.0914C4.41733 13.314 5.57533 12.9607 6.032 12.756C6.10333 12.2394 6.31067 11.886 6.54 11.6867C4.76333 11.4834 2.89533 10.7974 2.89533 7.73269C2.89533 6.85869 3.208 6.14536 3.71933 5.58536C3.63667 5.38336 3.36267 4.56936 3.79733 3.46802C3.79733 3.46802 4.46933 3.25336 5.998 4.28802C6.636 4.11069 7.32 4.02202 8 4.01869C8.68 4.02202 9.36467 4.11069 10.004 4.28802C11.5313 3.25336 12.202 3.46802 12.202 3.46802C12.6373 4.57002 12.3633 5.38402 12.2807 5.58536C12.794 6.14536 13.104 6.85936 13.104 7.73269C13.104 10.8054 11.2327 11.482 9.45133 11.68C9.738 11.928 10 12.4147 10 13.1614V15.3567C10 15.5694 10.128 15.8194 10.534 15.7407C13.7107 14.6814 16 11.6834 16 8.15002C16 3.73202 12.418 0.150024 8 0.150024Z" fill="black"/>
+                <path
+                  d="M8 0.150024C3.58267 0.150024 0 3.73202 0 8.15002C0 11.6847 2.292 14.6834 5.47133 15.7414C5.87067 15.8154 6 15.5674 6 15.3567V13.8674C3.77467 14.3514 3.31133 12.9234 3.31133 12.9234C2.94733 11.9987 2.42267 11.7527 2.42267 11.7527C1.69667 11.256 2.478 11.2667 2.478 11.2667C3.28133 11.3227 3.704 12.0914 3.704 12.0914C4.41733 13.314 5.57533 12.9607 6.032 12.756C6.10333 12.2394 6.31067 11.886 6.54 11.6867C4.76333 11.4834 2.89533 10.7974 2.89533 7.73269C2.89533 6.85869 3.208 6.14536 3.71933 5.58536C3.63667 5.38336 3.36267 4.56936 3.79733 3.46802C3.79733 3.46802 4.46933 3.25336 5.998 4.28802C6.636 4.11069 7.32 4.02202 8 4.01869C8.68 4.02202 9.36467 4.11069 10.004 4.28802C11.5313 3.25336 12.202 3.46802 12.202 3.46802C12.6373 4.57002 12.3633 5.38402 12.2807 5.58536C12.794 6.14536 13.104 6.85936 13.104 7.73269C13.104 10.8054 11.2327 11.482 9.45133 11.68C9.738 11.928 10 12.4147 10 13.1614V15.3567C10 15.5694 10.128 15.8194 10.534 15.7407C13.7107 14.6814 16 11.6834 16 8.15002C16 3.73202 12.418 0.150024 8 0.150024Z"
+                  fill="black"
+                />
               </g>
               <defs>
-              <clipPath id="clip0">
-              <rect width="16" height="16" fill="white" transform="translate(0 0.150024)"/>
-              </clipPath>
+                <clipPath id="clip0">
+                  <rect
+                    width="16"
+                    height="16"
+                    fill="white"
+                    transform="translate(0 0.150024)"
+                  />
+                </clipPath>
               </defs>
-              </svg>
-              <span>Star</span>
-            </div>
-            <div class="total">
-                  4,000
-            </div>
+            </svg>
+            <span>Star</span>
           </div>
+          <div class="total">4,000</div>
+        </div>
       </li>
     </ul>
   </div>
@@ -272,17 +346,17 @@ export default {
       menuActive: [],
     };
   },
-  methods:{
-    subListMenuActive(id){
-      if(!this.menuActive.includes(id)){
-        this.menuActive.push(id)
-      }else{
-        this.menuActive = this.menuActive.filter(i => {
-          return i !== id
-        })
+  methods: {
+    subListMenuActive(id) {
+      if (!this.menuActive.includes(id)) {
+        this.menuActive.push(id);
+      } else {
+        this.menuActive = this.menuActive.filter((i) => {
+          return i !== id;
+        });
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -295,7 +369,7 @@ export default {
   & .list-menu {
     list-style: none;
     width: 30%;
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       width: 100%;
     }
     margin: 0;
@@ -310,8 +384,8 @@ export default {
         border-bottom: 1px solid #c2c2e3;
         &:hover {
           border-radius: 2px;
-            background: var(--primary);
-      }
+          background: var(--primary);
+        }
       }
       & ul {
         margin-left: 20px;
@@ -323,19 +397,19 @@ export default {
           }
         }
       }
-      &  .form-group {
+      & .form-group {
         border: 1px solid #4e4b66;
         padding: 8px;
         border-radius: 10px;
         width: 100%;
         display: flex;
-        & span{
+        & span {
           width: 24px;
         }
-        &:hover input{
-            background: var(--primary);
-          }
-        & input{
+        &:hover input {
+          background: var(--primary);
+        }
+        & input {
           border: 0;
           width: 100%;
           border-radius: 10px;
@@ -343,17 +417,17 @@ export default {
         }
       }
 
-      & .sub-list-menu{
+      & .sub-list-menu {
         display: none;
       }
-       & .active{
-          display: block;
-        }
+      & .active {
+        display: block;
+      }
     }
   }
   & .list-box {
     width: 70%;
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       width: 100%;
     }
     list-style: none;
@@ -364,11 +438,11 @@ export default {
       width: 100%;
       & .title {
         position: relative;
-        & .dropdown-btn{
+        & .dropdown-btn {
           position: absolute;
           top: 40%;
           right: 20%;
-          @media (max-width:600px){
+          @media (max-width: 600px) {
             right: 2%;
           }
         }
@@ -378,7 +452,7 @@ export default {
         position: relative;
         width: 50px;
         margin-left: 30px;
-         &:hover .dropdown-list{
+        &:hover .dropdown-list {
           display: inline-block;
         }
         & .dropdown-list {
@@ -431,11 +505,11 @@ export default {
         text-align: center;
         margin: 30px 0;
         @media (max-width: 1024px) {
-            width: 100%;
-            margin-bottom: 30px;
+          width: 100%;
+          margin-bottom: 30px;
         }
         & img {
-          height:100%;
+          height: 100%;
           @media (max-width: 1024px) {
             width: 80%;
             height: auto;
@@ -479,21 +553,21 @@ export default {
     display: flex;
     flex-wrap: wrap;
   }
-  & .github-star{
+  & .github-star {
     cursor: pointer;
     display: flex;
-    & .star, .total{
+    & .star,
+    .total {
       padding: 8px 16px;
       border: 1px solid #ccc;
     }
-    & .star{
+    & .star {
       display: flex;
-      & span{
+      & span {
         margin-left: 10px;
         margin-top: -2px;
       }
     }
   }
-
 }
 </style>

@@ -67,8 +67,14 @@
               <br />
             </div>
             <div class="action">
-              <router-link to="/secret/counter" class="btn btn-sm btn-primary mr-3">Let’s Go!</router-link>
-              <router-link to="/docs" class="btn btn-sm btn-secondary mr-3">Docs</router-link>
+              <router-link
+                to="/secret/counter"
+                class="btn btn-sm btn-primary mr-3"
+                >Let’s Go!</router-link
+              >
+              <router-link to="/docs" class="btn btn-sm btn-secondary mr-3"
+                >Docs</router-link
+              >
               <a href="#" class="btn btn-sm btn-secondary">
                 <svg
                   width="16"
@@ -110,8 +116,18 @@
               <br />
             </div>
             <div class="action">
-              <a target="_BLANK" href="https://learn.figment.io/network-documentation/secret/secret-pathway" class="btn btn-sm btn-primary mr-3">Let’s Go!</a>
-              <a target="_BLANK" href="https://learn.figment.io/network-documentation/secret/secret-101" class="btn btn-sm btn-secondary">Docs</a>
+              <a
+                target="_BLANK"
+                href="https://learn.figment.io/network-documentation/secret/secret-pathway"
+                class="btn btn-sm btn-primary mr-3"
+                >Let’s Go!</a
+              >
+              <a
+                target="_BLANK"
+                href="https://learn.figment.io/network-documentation/secret/secret-101"
+                class="btn btn-sm btn-secondary"
+                >Docs</a
+              >
             </div>
           </div>
         </li>
@@ -154,8 +170,9 @@
   padding: 50px 10%;
   display: flex;
   flex-wrap: wrap;
-  &__image{
-    width: 264px; height: 174px;
+  &__image {
+    width: 264px;
+    height: 174px;
     @media (max-width: 1024px) {
       width: 100%;
       height: auto;
@@ -194,18 +211,18 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-   
+
     & .list-box {
       width: 100%;
       list-style: none;
       margin: 0 auto;
-      
+
       & li {
         display: flex;
         margin-top: 80px;
         min-height: 200px;
         width: 100%;
-        
+
         @media (max-width: 1024px) {
           flex-wrap: wrap;
           height: auto;
@@ -254,40 +271,41 @@
               margin-top: 0;
               text-align: center;
             }
-            & .btn{
-              padding:2px 4px;
+            & .btn {
+              padding: 2px 4px;
             }
           }
           & .action {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-             @media (max-width: 1024px) {
+            @media (max-width: 1024px) {
               justify-items: center;
               justify-content: center;
-              & .btn{
+              & .btn {
                 display: inline-block;
                 margin-bottom: 16px;
               }
             }
           }
-          & .action, .description {
+          & .action,
+          .description {
             display: none;
           }
           &:hover .title {
             margin-top: 0;
           }
           &:hover .action {
-             display: block;
-             @media (max-width: 1024px) {
-               display: flex;
-             }
+            display: block;
+            @media (max-width: 1024px) {
+              display: flex;
+            }
           }
           &:hover .description {
             display: block;
             @media (max-width: 1024px) {
-               display: flex;
-             }
+              display: flex;
+            }
           }
         }
       }

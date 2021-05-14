@@ -1,3 +1,1 @@
-<template>
-    Text Sorting & Suggestion
-</template>
+<template>Text Sorting & Suggestion</template>

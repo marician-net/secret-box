@@ -192,13 +192,13 @@
       </div>
       <div class="support-title">
         <h2>Support Ticket</h2>
-        <br>
+        <br />
         <p class="max-width">
           The best way to get support directly from SecretChainGirl Foundation!
           Open a support ticket to start a conversation with us. This will help
           us in building our FAQ to assist future Secret Boxers!
         </p>
-        <br>
+        <br />
       </div>
       <form action="#" class="form-support" @submit="submitData">
         <div class="form-group">
@@ -399,7 +399,6 @@ export default {
   border-radius: 5px;
 }
 
-
 .modal {
   position: fixed;
   width: 100%;
@@ -411,7 +410,6 @@ export default {
   align-items: center;
   z-index: 1300;
 }
-
 
 .modal-close {
   position: fixed;

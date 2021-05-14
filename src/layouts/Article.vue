@@ -1,29 +1,28 @@
 <template>
-   <div class="app">
+  <div class="app">
     <s-topbar />
     <s-navbar />
     <main class="main">
       <router-view />
     </main>
-    <s-footer :page="($route.path == '/') ? 'home' : ''" />
+    <s-footer :page="$route.path == '/' ? 'home' : ''" />
   </div>
 </template>
 
 <script>
-import STopbar from "../components/Topbar.vue";
-import SNavbar from "../components/Navbar.vue";
-import SFooter from "../components/Footer.vue";
+import STopbar from "../components/Topbar";
+import SNavbar from "../components/Navbar";
+import SFooter from "../components/Footer";
 export default {
   components: {
     STopbar,
     SNavbar,
     SFooter,
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
 .app {
   display: flex;
   flex-wrap: wrap;
@@ -40,7 +39,7 @@ export default {
     margin-top: 80px;
   }
   @media (max-width: 250px) {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 </style>

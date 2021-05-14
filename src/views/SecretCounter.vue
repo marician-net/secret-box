@@ -149,7 +149,6 @@
   </section>
 </template>
 
-
 <style lang="scss" scoped>
 .container_secret_counter {
   display: flex;
