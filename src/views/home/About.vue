@@ -164,6 +164,7 @@
   </div>
 </template>
 
+
 <style lang="scss" scoped>
 .about {
   width: 100%;
