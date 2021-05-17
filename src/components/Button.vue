@@ -57,6 +57,7 @@ button:focus {
 
 .btn-secondary {
   background: #fcfcfc;
+  color: var(--background);
   border: 1px solid #4e4b66;
   border-radius: 8px;
 }

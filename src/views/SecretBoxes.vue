@@ -129,7 +129,8 @@
 .box {
   padding: 50px 10%;
   width: 100%;
-  background: var(--grayscale);
+  background: var(--theme-bg-light);
+  color: var(--theme-color);
   & .list-box {
     width: 100%;
     list-style: none;

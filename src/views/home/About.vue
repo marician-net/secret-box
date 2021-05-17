@@ -171,6 +171,8 @@
   padding: 50px 10%;
   display: flex;
   flex-wrap: wrap;
+  background: var(--theme-bg);
+  color: var(--theme-color);
   &__image {
     width: 264px;
     height: 174px;

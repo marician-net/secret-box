@@ -366,7 +366,8 @@ export default {
   align-items: flex-start;
   flex-wrap: wrap;
   overflow: hidden;
-  background: var(--grayscale);
+  background: var(--theme-bg-light);
+  color: var(--theme-color);
   margin-top: 0;
 }
 .bg-news {
@@ -374,6 +375,7 @@ export default {
   width: 100%;
   height: 200px;
   left: 0;
+  color: var(--background);
   @media (max-width: 1024px) {
     height: 300px;
     left: -50%;
@@ -484,7 +486,8 @@ export default {
   display: flex;
   align-items: center;
   width: 100%;
-  background: white;
+  background: var(--theme-bg);
+  border-radius: 15px;
   margin-bottom: 30px;
   @media (max-width: 1024px) {
     width: 100%;
