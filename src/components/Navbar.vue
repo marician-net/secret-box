@@ -205,9 +205,13 @@ export default {
       this.toggleDropdown = false;
     },
     scrollTo(el) {
-      this.toggleMenu = false;
-      this.toggleDropdown = false;
-      this.$emit("scrollTo", el);
+      if(this.$route.path !== '/'){
+        this.$router.push("/#"+el)
+      }else{
+        this.toggleMenu = false;
+        this.toggleDropdown = false;
+        this.$emit("scrollTo", el);
+      }
     },
   },
   watch: {

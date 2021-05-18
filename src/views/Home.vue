@@ -23,6 +23,12 @@ export default {
       this.$emit("setScrollTo","")
     }
   },
+  mounted(){
+    let link = window.location.href
+    if(link.split("#")[1]){
+     this.scrollToElement(link.split("#")[1])
+    }
+  },
   methods: {
     scrollToElement(element) {
       // console.log(element)
