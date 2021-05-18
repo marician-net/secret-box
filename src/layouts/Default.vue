@@ -45,11 +45,11 @@ export default {
   }
 }
 .main {
-  // background: var(--theme-bg);
+  background: var(--theme-bg-light);
   width: 100%;
   font-size: 1rem;
   @media (max-width: 1024px) {
-    margin-top: 80px;
+    padding-top: 80px;
   }
   @media (max-width: 250px) {
     font-size: 0.5rem;
