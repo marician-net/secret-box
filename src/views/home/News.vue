@@ -48,7 +48,8 @@
   padding: 50px 10%;
   display: flex;
   flex-wrap: wrap;
-  background: var(--grayscale);
+  background: var(--theme-bg-light);
+  color: var(--theme-color);
   & .title {
     padding: 30px 0;
     width: 100%;

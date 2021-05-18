@@ -618,8 +618,8 @@ secretcli keys list
   position: relative;
   display: flex;
   align-items: flex-start;
-  // overflow: hidden;
-  background: var(--grayscale);
+  background: var(--theme-bg-light);
+  color: var(--theme-color);
   margin-top: 0;
 }
 .bg-launching {

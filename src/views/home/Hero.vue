@@ -73,7 +73,8 @@
   padding: 50px 10%;
   display: flex;
   flex-wrap: wrap;
-  background: var(--grayscale);
+  background: var(--theme-bg-light);
+  color: var(--theme-color);
   &__text {
     width: 50%;
     display: flex;
@@ -83,17 +84,9 @@
     padding-right: 10%;
 
     & .title {
-      font-family: Gobold High;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 118px;
-      line-height: 147px;
-      letter-spacing: 1.5px;
       margin-bottom: 20px;
-      color: #091133;
     }
     & .description {
-      color: #091133;
       margin-bottom: 20px;
       width: 100%;
     }

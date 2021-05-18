@@ -14,7 +14,10 @@ a {
 @import url(colors.scss);
 @import url(typography.scss);
 
-
+body{
+  background: var(--theme-bg);
+  color: var(--theme-color);
+}
 // Button Style
 .btn {
     border: 0;
@@ -45,6 +48,7 @@ a {
   
   .btn-secondary {
     background: #fcfcfc;
+    color: var(--background);
     border: 1px solid #4e4b66;
     border-radius: 8px;
   }
@@ -55,6 +59,7 @@ a {
   .btn-link {
     padding:8px;
     background: #fcfcfc;
+    color: var(--background);
     border-radius: 8px;
   }
   .btn-link:hover {

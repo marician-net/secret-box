@@ -309,8 +309,8 @@ export default {
   position: relative;
   display: flex;
   align-items: flex-start;
-  // overflow: hidden;
-  background: var(--grayscale);
+  background: var(--theme-bg-light);
+  color: var(--theme-color);
   margin-top: 0;
 }
 .container-support {
@@ -336,7 +336,7 @@ export default {
   display: flex;
   align-items: center;
   width: 60%;
-  background: white;
+  background: var(--theme-bg);
   margin-bottom: 30px;
   @media (max-width: 1024px) {
     width: 100%;

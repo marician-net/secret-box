@@ -125,11 +125,11 @@
       <img class="bg-small" src="/img/ufo-4.png" alt="Ufo" />
     </div>
     <div class="secret__hero3">
-      <img
+      <!-- <img
         class="bg-big"
         src="/img/secret-counter-hero-3.png"
         alt="Secret Counter Hero 2"
-      />
+      /> -->
       <h2>Explore More</h2>
       <div class="list-menu-3">
         <div class="list-menu-3-item">
@@ -154,9 +154,10 @@
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  background: var(--grayscale);
   position: relative;
   width: 100%;
+  background: var(--theme-bg-light);
+  color: var(--theme-color);
 }
 .secret__hero {
   width: 100%;
