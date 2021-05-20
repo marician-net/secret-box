@@ -497,7 +497,7 @@
           z-index: 1;
           top: 50px;
            @media (min-width:1300px) {
-            width: 700px;
+            width: 450px;
           }
         }
       }
