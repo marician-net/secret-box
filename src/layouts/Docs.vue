@@ -2,9 +2,14 @@
   <div class="app">
     <s-navbar page="docs" />
     <main class="main">
-      <transition name="slide-fade">
+      <!-- <transition name="slide-fade">
         <router-view />
-      </transition>
+      </transition> -->
+       <router-view v-slot="{ Component }">
+        <transition name="slide-fade">
+          <component :is="Component" v-on:setScrollTo="setScrollTo" :scrollToData="scrollToData"  />
+        </transition>
+      </router-view>
     </main>
     <s-footer :page="$route.path == '/' ? 'home' : ''" />
   </div>
@@ -18,6 +23,19 @@ export default {
     SNavbar,
     SFooter,
   },
+  data(){
+    return {
+      scrollToData : ''
+    }
+  },
+  methods:{
+    setScrollTo(data){
+      this.scrollToData = data
+    },
+    scrollToElement(el){
+      this.scrollToData = el
+    }
+  }
 };
 </script>
 
