@@ -14,6 +14,12 @@
 
 <script>
 export default {
+  metaInfo: {
+    title: 'Secret Box',
+    htmlAttrs: {
+      lang: 'en'
+    }
+  },
   mounted(){
     this.setLoading()
   },

@@ -1,10 +1,13 @@
 <template>
   <div class="app">
-    <s-navbar page="docs" />
+    <s-navbar page="docs" v-on:scrollTo="scrollToElement"  />
     <main class="main">
-      <transition name="slide-fade">
-        <router-view />
-      </transition>
+        <!-- <router-view /> -->
+        <router-view v-slot="{ Component }">
+          <transition name="slide-fade">
+            <component v-on:setScrollTo="setScrollTo" :scrollToData="scrollToData" :is="Component" />
+          </transition>
+        </router-view>
     </main>
     <s-footer :page="$route.path == '/' ? 'home' : ''" />
   </div>
@@ -14,10 +17,23 @@
 import SNavbar from "../components/Navbar.vue";
 import SFooter from "../components/Footer.vue";
 export default {
+  data(){
+    return {
+      scrollToData : ''
+    }
+  },
   components: {
     SNavbar,
     SFooter,
   },
+  methods:{
+    setScrollTo(data){
+      this.scrollToData = data
+    },
+    scrollToElement(el){
+      this.scrollToData = el
+    }
+  }
 };
 </script>
 
