@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer-home" v-if="page == 'home'">
+  <footer class="footer-home" v-if="$route.path == '/'">
     <div class="footer-home__form">
       <h5 class="title">Sign up for the Mailing List</h5>
       <p class="description">
@@ -43,7 +43,7 @@
     <img src="/img/footer-il3.png" class="footer-home__il3" alt="Il3" />
   </footer>
 
-  <footer class="footer-default">
+  <footer :class="($route.path == '/') ? 'footer-default footer-index' : 'footer-default'">
     <nav class="footer-bar">
       <s-social />
     </nav>
@@ -82,9 +82,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  .footer-index {
-    margin-top: -150px;
-  }
   .footer-bar {
     width: 80%;
     left: 10%;
@@ -115,9 +112,6 @@ export default {
     }
     & .right {
       margin-left: auto;
-      & a {
-        color: white;
-      }
     }
     @media (max-width: 1024px) {
       justify-content: center;
@@ -243,5 +237,18 @@ export default {
       display: none;
     }
   }
+}
+
+
+.footer-index {
+    margin-top: -150px;
+    background: transparent;
+     .footer-bar2 {
+        & .right {
+          & a {
+            color: white;
+          }
+        }
+     }
 }
 </style>

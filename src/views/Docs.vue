@@ -122,11 +122,49 @@
         <div class="card-qa-article">
           <h6>What this article useful?</h6>
           <div class="action">
-            <button class="btn btn-primary">Yes</button>
-            <button class="btn btn-secondary">No</button>
+            <button class="btn btn-primary" @click="updateUsefull(true)">
+              Yes
+            </button>
+            <button class="btn btn-secondary" @click="updateUsefull(false)">
+              No
+            </button>
           </div>
         </div>
+        <div v-if="showUseFull">
+          <div class="card-usefull" v-if="usefull">
+            <h3>You Are Awesome!</h3>
+            <br />
+            <p>Anything we can do to make it even better?</p>
+            <br />
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Write a comment"
+            />
+            <br />
+            <button class="btn btn-primary">Send</button>
+            <button @click="showUseFull = false" class="btn btn-secondary">
+              Skip for now
+            </button>
+          </div>
 
+          <div class="card-usefull" v-if="!usefull">
+            <h3>We are Sorry!</h3>
+            <br />
+            <p>Please let us know how we can improve.</p>
+            <br />
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Write a comment"
+            />
+            <br />
+            <button class="btn btn-primary">Send</button>
+            <button @click="showUseFull = false" class="btn btn-secondary">
+              Skip for now
+            </button>
+          </div>
+        </div>
         <span class="text-suggestion">
           Have a Suggestion ? <a href="#">Edit this doc on github</a>
         </span>
@@ -151,6 +189,8 @@ export default {
   },
   data() {
     return {
+      showUseFull: false,
+      usefull: false,
       menuActive: [],
       listMenu: [
         {
@@ -214,6 +254,16 @@ export default {
       console.log(el);
       if (el) {
         el.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+    updateUsefull(i) {
+      this.showUseFull = true;
+      if (i) {
+        // usefull
+        this.usefull = true;
+      } else {
+        // usefull x
+        this.usefull = false;
       }
     },
   },
@@ -322,6 +372,33 @@ export default {
   text-align: right;
   & a {
     color: var(--primary);
+  }
+}
+.card-usefull {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  margin: 16px 0;
+  border-radius: 10px;
+  background: var(--primary);
+  color: var(--background);
+  & h3 {
+    width: 100%;
+  }
+  & p {
+    width: 100%;
+  }
+  & .form-control {
+    width: 100%;
+    background: transparent;
+    padding: 12px 16px;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+  }
+  & .btn-primary {
+    margin-right: 10px;
   }
 }
 </style>

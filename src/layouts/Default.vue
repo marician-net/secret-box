@@ -10,7 +10,7 @@
         </router-view>
       <!-- <router-view  /> -->
     </main>
-    <s-footer :page="$route.path == '/' ? 'home' : ''" />
+    <s-footer />
   </div>
 </template>
 

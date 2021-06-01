@@ -416,6 +416,7 @@ import "prismjs/components/prism-javascript";
 import "prismjs/themes/prism-tomorrow.css"; // import syntax highlighting styles
 
 export default {
+  scrollToTop: true,
   components: {
     PrismEditor,
   },

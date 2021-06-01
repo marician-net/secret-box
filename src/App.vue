@@ -23,11 +23,6 @@ export default {
   mounted(){
     this.setLoading()
   },
-  // watch: {
-  //   $route() {
-  //     this.setLoading()
-  //   },
-  // },
   methods:{
     setLoading(){
         this.$store.commit("setPageLoading",true)

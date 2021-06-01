@@ -122,6 +122,32 @@
         </div>
       </li>
     </ul>
+    <div class="sign_up">
+      <div class="form_image">
+        <img src="/img/bg-secret-box.png" alt="bg" />
+      </div>
+      <div class="form_subscribe">
+        <form action="#">
+          <h2>Sign up for the Mailing List</h2>
+          <p>
+            Sign up today to be on the Secret Boxes mailing list. We’ll let you
+            know about new boxes, coming launches and other developments in the
+            Secret Network universe.
+          </p>
+          <br />
+          <input
+            class="form-control"
+            type="email"
+            placeholder="grayman@foo.com"
+          />
+          <button class="btn btn-secondary">Subscribe</button>
+          <br />
+          <br />
+          <input type="checkbox" />
+          I agree to receive cool stuffs from Secret Boxes Team
+        </form>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -200,6 +226,44 @@
   }
   .left-to-right {
     display: flex;
+  }
+
+  & .sign_up {
+    display: flex;
+    flex-wrap: wrap;
+    & .form_image {
+      width: 40%;
+      padding: 30px;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+      & img {
+        widows: 100%;
+      }
+    }
+    & .form_subscribe {
+      width: 60%;
+      padding: 30px;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+      & .form-control {
+        width: 50%;
+        @media (max-width: 1024px) {
+          width: 100%;
+        }
+        border: 1px solid #4e4b66;
+        padding: 10px 16px;
+        border-radius: 5px;
+      }
+    }
+    & .btn {
+      margin-left: 10px;
+      @media (max-width: 1024px) {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
   }
 }
 </style>
