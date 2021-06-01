@@ -277,6 +277,7 @@
         <router-link to="/tutorial" class="btn btn-primary"
           >See tutorials</router-link
         >
+
         <a href="#" class="btn btn-secondary" @click="submit = false">Skip</a>
       </div>
     </div>
@@ -427,6 +428,7 @@ export default {
   width: 40%;
   padding: 96px 128px;
   background: var(--primary);
+  color: var(--background);
   z-index: 1302;
   display: flex;
   justify-content: center;
@@ -434,8 +436,12 @@ export default {
   align-content: center;
   flex-wrap: wrap;
   text-align: center;
+  & h3{
+    width: 100%;
+  }
   & p {
     padding: 30px 0;
+    width: 100%;
   }
   & a {
     margin-right: 10px;
@@ -444,6 +450,16 @@ export default {
   @media (max-width: 1024px) {
     padding: 30px 60px;
     width: 90%;
+  }
+  @media (max-width: 800px) {
+    padding: 60px;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    bottom: 0;
+    & .btn{
+      width: 100%;
+    }
   }
 }
 </style>
