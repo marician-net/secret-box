@@ -123,13 +123,15 @@
         <a href="#">Proceed to github</a>
       </div>
       <img class="bg-small" src="/img/ufo-4.png" alt="Ufo" />
+      <img class="bg-small1" src="/img/ufo-4.png" alt="Ufo" />
+      <img class="bg-small2" src="/img/ufo-4.png" alt="Ufo" />
     </div>
     <div class="secret__hero3">
-      <!-- <img
+      <img
         class="bg-big"
         src="/img/secret-counter-hero-3.png"
         alt="Secret Counter Hero 2"
-      /> -->
+      />
       <h2>Explore More</h2>
       <div class="list-menu-3">
         <div class="list-menu-3-item">
@@ -280,7 +282,26 @@ export default {
   }
   & .bg-small {
     position: absolute;
-    right: 0;
+    right: 10px;
+    @media (max-width: 404px) {
+      display: none;
+    }
+  }
+   & .bg-small1 {
+    position: absolute;
+    right: 300px;
+    width: 100px;
+    top: 40%;
+    @media (max-width: 404px) {
+      display: none;
+    }
+  }
+   & .bg-small2 {
+    position: absolute;
+    right: 200px;
+    top: 60%;
+    width: 100px;
+    transform: rotate(-50deg);
     @media (max-width: 404px) {
       display: none;
     }

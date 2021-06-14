@@ -3,11 +3,14 @@
     <s-topbar />
     <s-navbar page="default" v-on:scrollTo="scrollToElement" />
     <main class="main">
-      <transition name="slide-fade">
-      <router-view v-on:setScrollTo="setScrollTo" :scrollToData="scrollToData" />
-      </transition>
+        <router-view v-slot="{ Component }">
+          <transition name="slide-fade">
+            <component v-on:setScrollTo="setScrollTo" :scrollToData="scrollToData" :is="Component" />
+          </transition>
+        </router-view>
+      <!-- <router-view  /> -->
     </main>
-    <s-footer :page="$route.path == '/' ? 'home' : ''" />
+    <s-footer />
   </div>
 </template>
 

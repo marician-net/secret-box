@@ -14,14 +14,15 @@
 
 <script>
 export default {
+  metaInfo: {
+    title: 'Secret Box',
+    htmlAttrs: {
+      lang: 'en'
+    }
+  },
   mounted(){
     this.setLoading()
   },
-  // watch: {
-  //   $route() {
-  //     this.setLoading()
-  //   },
-  // },
   methods:{
     setLoading(){
         this.$store.commit("setPageLoading",true)

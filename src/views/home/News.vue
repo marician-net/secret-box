@@ -1,5 +1,7 @@
 <template>
   <section class="news">
+    <img class="news__bg" src="/img/Background.png" alt="bg">
+    <img class="news__bg1" src="/img/Background-1.png" alt="bg 1">
     <h1 class="title">NEWS & UPDATES</h1>
     <p class="description">
       What’s going on in the Secret Boxes universe? Here is where devs can find
@@ -50,6 +52,14 @@
   flex-wrap: wrap;
   background: var(--theme-bg-light);
   color: var(--theme-color);
+  &__bg{
+    position: absolute;
+    left: 10%;
+  }
+  &__bg1{
+    position: absolute;
+    right: 10%;
+  }
   & .title {
     padding: 30px 0;
     width: 100%;

@@ -17,7 +17,6 @@
         <div class="text">
           <h6>Launch Developer Blockchain</h6>
           <br />
-
           <p>
             The first thing you’ll need to do to start developing secret
             contracts in your local environment is install and launch a Secret
